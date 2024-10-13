@@ -13,6 +13,10 @@
 		980391D12CAC6599003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D02CAC6599003DB494 /* Base */; };
 		980391D32CAC659A003DB494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980391D22CAC659A003DB494 /* Assets.xcassets */; };
 		980391D62CAC659A003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D52CAC659A003DB494 /* Base */; };
+		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
+		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
+		98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659062CBC6A5C00326E5C /* EmailTextField.swift */; };
+		98E659092CBC6BB800326E5C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659082CBC6BB800326E5C /* PasswordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		980391D22CAC659A003DB494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980391D52CAC659A003DB494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980391D72CAC659A003DB494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E659022CBC66C900326E5C /* Validable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validable.swift; sourceTree = "<group>"; };
+		98E659042CBC672A00326E5C /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
+		98E659062CBC6A5C00326E5C /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		98E659082CBC6BB800326E5C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				980391D22CAC659A003DB494 /* Assets.xcassets */,
 				980391D42CAC659A003DB494 /* LaunchScreen.storyboard */,
 				980391D72CAC659A003DB494 /* Info.plist */,
+				98E659022CBC66C900326E5C /* Validable.swift */,
+				98E659042CBC672A00326E5C /* ValidableTextField.swift */,
+				98E659062CBC6A5C00326E5C /* EmailTextField.swift */,
+				98E659082CBC6BB800326E5C /* PasswordTextField.swift */,
 			);
 			path = BatApp;
 			sourceTree = "<group>";
@@ -140,7 +152,11 @@
 			files = (
 				980391CE2CAC6599003DB494 /* ViewController.swift in Sources */,
 				980391CA2CAC6599003DB494 /* AppDelegate.swift in Sources */,
+				98E659092CBC6BB800326E5C /* PasswordTextField.swift in Sources */,
+				98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */,
+				98E659032CBC66C900326E5C /* Validable.swift in Sources */,
 				980391CC2CAC6599003DB494 /* SceneDelegate.swift in Sources */,
+				98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
