@@ -25,8 +25,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        print("Login: viewDidLoad")
+
         emailTextField = EmailTextField(textInput: emailInput)
         passwordTextField = PasswordTextField(textInput: passwordInput)
     }
@@ -39,6 +39,13 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "fromLoginToHome" {
+            let destination = segue.destination as! HomeViewController
+            
+            destination.email = emailInput.text
+        }
+    }
 
     @IBAction func loginEvent(_ sender: UIButton) {
         do {
@@ -47,7 +54,8 @@ class ViewController: UIViewController {
             try passwordTextField?.validate()
             
             
-            displayAlert("Validated","Success login.")
+            
+            performSegue(withIdentifier: "fromLoginToHome", sender: nil)
             
         } catch let error as ValidableTextField.TextFieldError {
             switch error {
@@ -61,6 +69,32 @@ class ViewController: UIViewController {
         } catch {
             displayAlert("ERROR", "Login not success.")
         }
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Login: viewWillAppear")
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Login: viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("Login: viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("Login: viewDidDisappear")
+    }
+    
+    deinit {
+        print("Login: deinit")
     }
 }
 
