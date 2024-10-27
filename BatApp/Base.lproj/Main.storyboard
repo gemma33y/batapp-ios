@@ -134,44 +134,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQm-1R-BiG">
-                                <rect key="frame" x="16" y="415" width="361" height="28.666666666666686"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrK-eY-Jlx">
-                                <rect key="frame" x="16" y="488.66666666666669" width="361" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bane" translatesAutoresizingMaskIntoConstraints="NO" id="9Qu-ZD-j3U">
-                                <rect key="frame" x="20" y="75" width="353" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="UWj-kZ-CCa"/>
-                                </constraints>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-gE-CSg">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LFX-Ws-XdT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CQm-1R-BiG" firstAttribute="leading" secondItem="LFX-Ws-XdT" secondAttribute="leading" constant="16" id="413-OQ-7p1"/>
-                            <constraint firstItem="CQm-1R-BiG" firstAttribute="top" secondItem="9Qu-ZD-j3U" secondAttribute="bottom" constant="40" id="461-qU-qTK"/>
-                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="trailing" secondItem="YrK-eY-Jlx" secondAttribute="trailing" constant="16" id="B57-dk-DLJ"/>
-                            <constraint firstItem="9Qu-ZD-j3U" firstAttribute="top" secondItem="LFX-Ws-XdT" secondAttribute="top" constant="16" id="FLS-fu-OLE"/>
-                            <constraint firstItem="YrK-eY-Jlx" firstAttribute="leading" secondItem="LFX-Ws-XdT" secondAttribute="leading" constant="16" id="IiI-Lz-8AM"/>
-                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="trailing" secondItem="9Qu-ZD-j3U" secondAttribute="trailing" constant="20" id="Jxo-cU-6XU"/>
-                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="trailing" secondItem="CQm-1R-BiG" secondAttribute="trailing" constant="16" id="KwA-Dp-L2g"/>
-                            <constraint firstItem="YrK-eY-Jlx" firstAttribute="top" secondItem="CQm-1R-BiG" secondAttribute="bottom" constant="45" id="fz7-cF-lui"/>
-                            <constraint firstItem="9Qu-ZD-j3U" firstAttribute="leading" secondItem="LFX-Ws-XdT" secondAttribute="leading" constant="20" id="xkQ-N7-dHQ"/>
+                            <constraint firstItem="ibo-gE-CSg" firstAttribute="top" secondItem="LFX-Ws-XdT" secondAttribute="top" id="1nt-Gz-Tbb"/>
+                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="trailing" secondItem="ibo-gE-CSg" secondAttribute="trailing" id="8Qj-BX-lvG"/>
+                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="bottom" secondItem="ibo-gE-CSg" secondAttribute="bottom" id="V1l-Q5-ZX0"/>
+                            <constraint firstItem="ibo-gE-CSg" firstAttribute="leading" secondItem="LFX-Ws-XdT" secondAttribute="leading" id="abu-qU-fNX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qhb-0K-jdL"/>
                     <connections>
-                        <outlet property="descriptionEnemy" destination="YrK-eY-Jlx" id="Sul-8J-VL2"/>
-                        <outlet property="imageEnemy" destination="9Qu-ZD-j3U" id="QyU-U4-DTD"/>
-                        <outlet property="nameEnemy" destination="CQm-1R-BiG" id="aaN-17-qvh"/>
+                        <outlet property="tableDetails" destination="ibo-gE-CSg" id="r1L-Qw-vvw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rU-Y5-VfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -196,7 +175,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bane" width="231" height="396"/>
         <image name="batman-logo" width="565" height="352"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
