@@ -119,7 +119,7 @@
                     <navigationItem key="navigationItem" id="0h9-3c-dcI"/>
                     <connections>
                         <outlet property="enemiesTable" destination="dkL-gr-v7W" id="rug-Iy-II5"/>
-                        <segue destination="meu-yG-pOl" kind="showDetail" identifier="fromEnemiesToDetails" id="I3v-Ml-bRd"/>
+                        <segue destination="meu-yG-pOl" kind="show" identifier="fromEnemiesToDetails" id="I3v-Ml-bRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9m-kL-erj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -131,23 +131,23 @@
             <objects>
                 <viewController id="meu-yG-pOl" customClass="DetailsEnemyViewController" customModule="BatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HZP-dh-8Vg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQm-1R-BiG">
-                                <rect key="frame" x="16" y="356" width="361" height="28.666666666666686"/>
+                                <rect key="frame" x="16" y="415" width="361" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrK-eY-Jlx">
-                                <rect key="frame" x="16" y="429.66666666666669" width="361" height="20.333333333333314"/>
+                                <rect key="frame" x="16" y="488.66666666666669" width="361" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bane" translatesAutoresizingMaskIntoConstraints="NO" id="9Qu-ZD-j3U">
-                                <rect key="frame" x="20" y="16" width="353" height="300"/>
+                                <rect key="frame" x="20" y="75" width="353" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="UWj-kZ-CCa"/>
                                 </constraints>

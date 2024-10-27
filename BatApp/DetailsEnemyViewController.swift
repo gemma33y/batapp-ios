@@ -29,5 +29,12 @@ class DetailsEnemyViewController: UIViewController {
         descriptionEnemy.text = descriptionEnemyText
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
 
 }
