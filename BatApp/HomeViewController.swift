@@ -8,11 +8,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    public var email: String?
-
+    @IBOutlet weak var enemiesTable: UITableView!
     
-    @IBOutlet weak var greetingLabel: UILabel!
+    var enemies: [String] = ["Joker", "Bats", "Spiders", "lkasjflkasjflkjsalkjdaslkfjaslkdjflkasjflkasjflkasjdflkasdj"]
+    
+    private func initializeCustomCell(){
+        enemiesTable.register(UINib(nibName: "EnemyCustomTableViewCell", bundle: .main), forCellReuseIdentifier: "enemyCustomCell")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Home: viewDidLoad")
@@ -21,9 +24,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("Home: viewWillAppear")
-
-        greetingLabel.text = "Hello " + (email ?? "no email") + "!"
-        
+        initializeCustomCell()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,4 +46,34 @@ class HomeViewController: UIViewController {
         print("Home: deinit")
     }
 
+}
+
+
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return enemies.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "enemyCustomCell", for: indexPath) as! EnemyCustomTableViewCell
+        
+        cell.enemyName?.text = enemies[indexPath.row]
+       
+        
+        return cell
+    }
+    
+    
+}
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        print("Elwment Selected: \( enemies[indexPath.row])")
+    }
 }

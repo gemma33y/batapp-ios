@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mkt-wT-mgl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FAw-J6-hZ3">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -98,20 +98,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0s-tR-CpK">
-                                <rect key="frame" x="98" y="369" width="196" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dkL-gr-v7W">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FAw-J6-hZ3" id="v6E-0R-fSZ"/>
+                                    <outlet property="delegate" destination="FAw-J6-hZ3" id="ULP-IY-BWH"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tjK-4X-Kf4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dkL-gr-v7W" firstAttribute="top" secondItem="tjK-4X-Kf4" secondAttribute="top" id="1FH-Ty-RWV"/>
+                            <constraint firstItem="tjK-4X-Kf4" firstAttribute="bottom" secondItem="dkL-gr-v7W" secondAttribute="bottom" id="4T2-Gk-h13"/>
+                            <constraint firstItem="dkL-gr-v7W" firstAttribute="leading" secondItem="tjK-4X-Kf4" secondAttribute="leading" id="iy8-kj-nTn"/>
+                            <constraint firstItem="tjK-4X-Kf4" firstAttribute="trailing" secondItem="dkL-gr-v7W" secondAttribute="trailing" id="yGZ-Vl-6ia"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0h9-3c-dcI"/>
                     <connections>
-                        <outlet property="greetingLabel" destination="Y0s-tR-CpK" id="qCO-Dt-SPb"/>
+                        <outlet property="enemiesTable" destination="dkL-gr-v7W" id="rug-Iy-II5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9m-kL-erj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
