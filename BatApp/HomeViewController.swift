@@ -77,12 +77,12 @@ class HomeViewController: UIViewController {
         ),
         Enemy(
             name: "Man-Bat",
-            imageURL: "ManBat",
+            imageURL: "Man-Bat",
             description: "Dr. Kirk Langstrom invented a serum to give him echolocation in an attempt to cure his deafness. The serum had an unforeseen side effect, transforming him into the monstrous human-bat hybrid creature known as the Man-Bat."
         ),
         Enemy(
             name: "Mr. Freeze",
-            imageURL: "MrFreeze",
+            imageURL: "Mr.Freeze",
             description: "Dr. Victor Fries is a scientist who accidentally spilled cryogenic chemicals on himself while inventing a freeze-gun. Now requiring subzero temperatures to survive, he uses a special containment suit and cold-themed weaponry to commit crimes."
         ),
         Enemy(
@@ -97,7 +97,7 @@ class HomeViewController: UIViewController {
         ),
         Enemy(
             name: "Ra's al Ghul",
-            imageURL: "RasAlGhul",
+            imageURL: "RaSalGhul",
             description: "Ra's al Ghul is a centuries-old international radical environmentalist who believes that his actions help 'bring balance' to the world. He is the founder of the League of Assassins and is fully aware of Batman's secret identity."
         ),
         Enemy(
@@ -112,7 +112,7 @@ class HomeViewController: UIViewController {
         ),
         Enemy(
             name: "Two-Face",
-            imageURL: "TwoFace",
+            imageURL: "Two-Face",
             description: "Harvey Dent was a Gotham City district attorney until half of his face was disfigured by acid. He developed dissociative identity disorder and is obsessed with duality, using a coin to make decisions."
         ),
         Enemy(
@@ -127,7 +127,8 @@ class HomeViewController: UIViewController {
         )
     ]
 
-
+    
+    
 
     
     
@@ -166,6 +167,22 @@ class HomeViewController: UIViewController {
     deinit {
         print("Home: deinit")
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "fromEnemiesToDetails" {
+
+            if let destination = segue.destination as? DetailsEnemyViewController,
+               let indexPath = sender as? IndexPath {  // Get the index of the enemy clicked
+                
+                let enemy = enemies[indexPath.row]
+                
+                destination.nameEnemyText = enemy.name
+                destination.imageEnemyImage = UIImage(named: enemy.imageURL)
+                destination.descriptionEnemyText = enemy.description
+            }
+        }
+    }
+
 
 }
 
@@ -198,5 +215,9 @@ extension HomeViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         print("Element Selected: \( enemies[indexPath.row])")
+        
+        // Create a segue to show the description of the enemy -> fromEnemiesToDetail
+        performSegue(withIdentifier: "fromEnemiesToDetails", sender: indexPath)
+        
     }
 }

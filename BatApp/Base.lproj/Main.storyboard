@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FAw-J6-hZ3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mkt-wT-mgl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -83,7 +83,7 @@
                     <connections>
                         <outlet property="emailInput" destination="umA-qr-2L3" id="Ade-Xy-quS"/>
                         <outlet property="passwordInput" destination="RYy-ah-72i" id="NPl-y2-JGw"/>
-                        <segue destination="FAw-J6-hZ3" kind="show" identifier="fromLoginToHome" id="yeU-6t-yP7"/>
+                        <segue destination="FAw-J6-hZ3" kind="show" identifier="fromLoginToHome" id="QA6-hT-ad2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -119,11 +119,64 @@
                     <navigationItem key="navigationItem" id="0h9-3c-dcI"/>
                     <connections>
                         <outlet property="enemiesTable" destination="dkL-gr-v7W" id="rug-Iy-II5"/>
+                        <segue destination="meu-yG-pOl" kind="showDetail" identifier="fromEnemiesToDetails" id="I3v-Ml-bRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9m-kL-erj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="4"/>
+            <point key="canvasLocation" x="938" y="4"/>
+        </scene>
+        <!--Details Enemy View Controller-->
+        <scene sceneID="4Sg-hK-gwF">
+            <objects>
+                <viewController id="meu-yG-pOl" customClass="DetailsEnemyViewController" customModule="BatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HZP-dh-8Vg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQm-1R-BiG">
+                                <rect key="frame" x="16" y="356" width="361" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrK-eY-Jlx">
+                                <rect key="frame" x="16" y="429.66666666666669" width="361" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bane" translatesAutoresizingMaskIntoConstraints="NO" id="9Qu-ZD-j3U">
+                                <rect key="frame" x="20" y="16" width="353" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="UWj-kZ-CCa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LFX-Ws-XdT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CQm-1R-BiG" firstAttribute="leading" secondItem="LFX-Ws-XdT" secondAttribute="leading" constant="16" id="413-OQ-7p1"/>
+                            <constraint firstItem="CQm-1R-BiG" firstAttribute="top" secondItem="9Qu-ZD-j3U" secondAttribute="bottom" constant="40" id="461-qU-qTK"/>
+                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="trailing" secondItem="YrK-eY-Jlx" secondAttribute="trailing" constant="16" id="B57-dk-DLJ"/>
+                            <constraint firstItem="9Qu-ZD-j3U" firstAttribute="top" secondItem="LFX-Ws-XdT" secondAttribute="top" constant="16" id="FLS-fu-OLE"/>
+                            <constraint firstItem="YrK-eY-Jlx" firstAttribute="leading" secondItem="LFX-Ws-XdT" secondAttribute="leading" constant="16" id="IiI-Lz-8AM"/>
+                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="trailing" secondItem="9Qu-ZD-j3U" secondAttribute="trailing" constant="20" id="Jxo-cU-6XU"/>
+                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="trailing" secondItem="CQm-1R-BiG" secondAttribute="trailing" constant="16" id="KwA-Dp-L2g"/>
+                            <constraint firstItem="YrK-eY-Jlx" firstAttribute="top" secondItem="CQm-1R-BiG" secondAttribute="bottom" constant="45" id="fz7-cF-lui"/>
+                            <constraint firstItem="9Qu-ZD-j3U" firstAttribute="leading" secondItem="LFX-Ws-XdT" secondAttribute="leading" constant="20" id="xkQ-N7-dHQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qhb-0K-jdL"/>
+                    <connections>
+                        <outlet property="descriptionEnemy" destination="YrK-eY-Jlx" id="Sul-8J-VL2"/>
+                        <outlet property="imageEnemy" destination="9Qu-ZD-j3U" id="QyU-U4-DTD"/>
+                        <outlet property="nameEnemy" destination="CQm-1R-BiG" id="aaN-17-qvh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rU-Y5-VfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h39-SW-fzA">
@@ -143,6 +196,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bane" width="231" height="396"/>
         <image name="batman-logo" width="565" height="352"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
