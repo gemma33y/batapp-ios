@@ -136,6 +136,8 @@ class HomeViewController: UIViewController {
     
     private func initializeCustomCell(){
         enemiesTable.register(UINib(nibName: "EnemyCustomTableViewCell", bundle: .main), forCellReuseIdentifier: "enemyCustomCell")
+        
+        enemiesTable.register(UINib(nibName: "CustomGadgetListTableViewCell", bundle: .main), forCellReuseIdentifier: "customGadgetListCell")
     }
     
     override func viewDidLoad() {
@@ -189,22 +191,33 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return enemies.count
+        return section == 0 ? 1 : enemies.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "enemyCustomCell", for: indexPath) as! EnemyCustomTableViewCell
-        
-        let enemy = enemies[indexPath.row]
-        
-        cell.enemyName?.text = enemy.name
-        cell.enemyImage?.image = UIImage(named: enemy.imageURL)
-        
-        return cell
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "customGadgetListCell", for: indexPath) as! CustomGadgetListTableViewCell
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "enemyCustomCell", for: indexPath) as! EnemyCustomTableViewCell
+            
+            let enemy = enemies[indexPath.row]
+            
+            cell.enemyName?.text = enemy.name
+            cell.enemyImage?.image = UIImage(named: enemy.imageURL)
+            
+            return cell
+        }
     }
     
     
