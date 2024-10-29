@@ -18,13 +18,17 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LkN-Ny-7Ru">
                         <rect key="frame" x="32" y="27" width="252" height="262"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="252" id="cPL-3e-ZZb"/>
+                            <constraint firstAttribute="height" constant="262" id="ehO-if-Gj3"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="LkN-Ny-7Ru" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="57p-7R-DFq"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="LkN-Ny-7Ru" secondAttribute="trailing" constant="16" id="8TS-9u-0EV"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="LkN-Ny-7Ru" secondAttribute="bottom" constant="16" id="hr4-IF-T3C"/>
-                    <constraint firstItem="LkN-Ny-7Ru" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="nJD-Wb-JZB"/>
+                    <constraint firstAttribute="trailing" secondItem="LkN-Ny-7Ru" secondAttribute="trailing" constant="32" id="2kl-jZ-DVv"/>
+                    <constraint firstItem="LkN-Ny-7Ru" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27" id="7gl-p2-YxC"/>
+                    <constraint firstItem="LkN-Ny-7Ru" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="eXs-8P-n7d"/>
+                    <constraint firstAttribute="bottom" secondItem="LkN-Ny-7Ru" secondAttribute="bottom" constant="27" id="nh8-zj-ttp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
