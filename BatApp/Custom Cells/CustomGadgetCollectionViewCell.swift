@@ -9,6 +9,10 @@ import UIKit
 
 class CustomGadgetCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var gadgetName: UILabel!
+    
+    
+    @IBOutlet weak var gadgetImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

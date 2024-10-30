@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
         let imageURL: String
         let description: String
     }
+ 
     
     let enemies: [Enemy] = [
         Enemy(
@@ -126,9 +127,6 @@ class HomeViewController: UIViewController {
             description: "Victor Zsasz is a serial killer whose modus operandi involves slitting the throats of his victims, then arranging the bodies in lifelike poses. He cuts a tally mark onto his own body for each of his victims."
         )
     ]
-
-    
-    
 
     
     
