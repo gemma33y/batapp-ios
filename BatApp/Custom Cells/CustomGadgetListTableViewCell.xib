@@ -18,9 +18,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YYD-Td-jZa">
-                        <rect key="frame" x="16" y="16" width="288" height="118"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FpU-13-guH">
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FpU-13-guH">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -29,17 +29,17 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="YYD-Td-jZa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9sW-hf-cVo"/>
-                    <constraint firstItem="YYD-Td-jZa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="EAQ-08-o3d"/>
-                    <constraint firstAttribute="bottom" secondItem="YYD-Td-jZa" secondAttribute="bottom" constant="16" id="Pys-o9-u5a"/>
-                    <constraint firstAttribute="trailing" secondItem="YYD-Td-jZa" secondAttribute="trailing" constant="16" id="ViM-Fa-OSy"/>
+                    <constraint firstItem="YYD-Td-jZa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="R2j-bs-EPh"/>
+                    <constraint firstAttribute="bottom" secondItem="YYD-Td-jZa" secondAttribute="bottom" id="Tk2-Of-JvU"/>
+                    <constraint firstAttribute="trailing" secondItem="YYD-Td-jZa" secondAttribute="trailing" id="j7i-0u-X6S"/>
+                    <constraint firstItem="YYD-Td-jZa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jl7-xi-rEn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="YYD-Td-jZa" id="6d4-HZ-m5p"/>
             </connections>
-            <point key="canvasLocation" x="133" y="20"/>
+            <point key="canvasLocation" x="132.82442748091603" y="19.718309859154932"/>
         </tableViewCell>
     </objects>
     <resources>

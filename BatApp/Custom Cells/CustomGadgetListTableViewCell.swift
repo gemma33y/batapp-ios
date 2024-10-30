@@ -17,22 +17,22 @@ class CustomGadgetListTableViewCell: UITableViewCell {
     }
     
     let gadgets: [Equipment] = [
-        Equipment(
-            name: "Bomb",
-            imageURL: "Bomb",
-            description: "Prova"
-            ),
-        Equipment(
-            name: "Bomb",
-            imageURL: "Bomb",
-            description: "Prova"
-        ),
-        Equipment(
-            name: "Bomb",
-            imageURL: "Bomb",
-            description: "Prova"
-        )
+        Equipment(name: "Batarang", imageURL: "Batarang", description: "Prova"),
+        Equipment(name: "Batclaw", imageURL: "Batclaw", description: "Prova"),
+        Equipment(name: "Batman's Pistol", imageURL: "BatmansPistol", description: "Prova"),
+        Equipment(name: "Batzooka", imageURL: "Batzooka", description: "Prova"),
+        Equipment(name: "Cryptographic Sequencer", imageURL: "CryptographicSequencer", description: "Prova"),
+        Equipment(name: "Detective Mode", imageURL: "DetectiveMode", description: "Prova"),
+        Equipment(name: "Grapple Gun", imageURL: "GrappleGun", description: "Prova"),
+        Equipment(name: "Harpoon Rifle", imageURL: "HarpoonRifle", description: "Prova"),
+        Equipment(name: "Line Launcher", imageURL: "LineLauncher", description: "Prova"),
+        Equipment(name: "Memory Cloth Cape", imageURL: "MemoryClothCape", description: "Prova"),
+        Equipment(name: "Smoke Bomb", imageURL: "SmokeBomb", description: "Prova"),
+        Equipment(name: "Sticky Bomb Gun", imageURL: "StickyBombGun", description: "Prova"),
+        Equipment(name: "Tactical Knife", imageURL: "TacticalKnife", description: "Prova"),
+        Equipment(name: "Utility Belt", imageURL: "UtilityBelt", description: "Prova")
     ]
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,7 +41,6 @@ class CustomGadgetListTableViewCell: UITableViewCell {
         collectionView.dataSource = self
         collectionView.delegate = self
         initializeCustomCells();
-        self.backgroundColor = UIColor.lightGray
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -73,10 +72,7 @@ extension CustomGadgetListTableViewCell: UICollectionViewDataSource {
 
         
         cell.gadgetName?.text = gadget.name
-        cell.gadgetImage?.image = UIImage(named: "batman-logo")
-        
-        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor.green : UIColor.white
-
+        cell.gadgetImage?.image = UIImage(named: gadget.imageURL)
         
         return cell
     }
