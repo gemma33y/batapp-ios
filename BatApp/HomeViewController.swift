@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
         let description: String
     }
  
-    
     let enemies: [Enemy] = [
         Enemy(
             name: "Bane",
@@ -181,8 +180,17 @@ class HomeViewController: UIViewController {
                 destination.descriptionEnemyText = enemy.description
             }
         }
+        
+        if segue.identifier == "fromEnemiesToDetails" {
+            if let destination = segue.destination as? DetailsEnemyViewController,
+               let gadget = sender as? Equipment {
+                print("Gadget: \(gadget)")
+                destination.nameEnemyText = gadget.name
+                destination.descriptionEnemyText = gadget.description
+                destination.imageEnemyImage = UIImage(named: gadget.imageURL)
+            }
+        }
     }
-
 
 }
 
@@ -204,6 +212,8 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "customGadgetListCell", for: indexPath) as! CustomGadgetListTableViewCell
+            
+            cell.delegate = self
             
             return cell
         } else {
@@ -230,5 +240,13 @@ extension HomeViewController: UITableViewDelegate {
         // Create a segue to show the description of the enemy -> fromEnemiesToDetail
         performSegue(withIdentifier: "fromEnemiesToDetails", sender: indexPath)
         
+    }
+    
+  
+}
+
+extension HomeViewController: CustomGadgetListTableViewCellDelegate {
+    func didSelectGadget(_ gadget: Equipment) {
+        performSegue(withIdentifier: "fromEnemiesToDetails", sender: gadget)
     }
 }
