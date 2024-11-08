@@ -22,3 +22,4 @@ class ImageTableViewCell: UITableViewCell {
     }
     
 }
+

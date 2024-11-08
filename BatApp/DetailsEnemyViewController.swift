@@ -60,7 +60,7 @@ extension DetailsEnemyViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return indexPath.row == 0 ?  316 : UITableView.automaticDimension
+        return indexPath.row == 0 ? 316 : UITableView.automaticDimension
     }
 
     

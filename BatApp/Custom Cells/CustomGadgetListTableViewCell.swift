@@ -19,49 +19,50 @@ class CustomGadgetListTableViewCell: UITableViewCell {
    
     let gadgets: [Equipment] = [
         Equipment(
+            name: "Acetylene Torch",
+            description: "An Acetylene Torch was one of Batman's tools. It was often employed to cut through tough metal objects such as steel chains.",
+            imageURL: "AcetyleneTorch"),
+        Equipment(
+            name: "Adrenaline Shot",
+            description: "An Adrenaline Shot was kept on Batman's Utility Belt. Containing Epinephrine, the vigilante would use it to give either himself and/or other more adrenaline in emergency situations. A special injector was hidden on the Batsuit to deliver the drug quickly into Batman's body.",
+            imageURL: "AdrenalineShot"),
+        Equipment(
+            name: "Batarangs",
+            description: "Batarangs are bat-shaped throwing weapons used by Batman. These are the most basic and commonly used items in his arsenal. A vast array sizes and types have been designed, some of them razor sharp. Traditionally they are large blunt boomerangs used to knock thugs out. They can also be used as grappling hooks when attached to Batropes. Batman has also been known to use batarangs modified with additional tools and gadgets.",
+            imageURL: "Batarang"),
+        Equipment(
+            name: "Batclaw",
+            description: "The Batclaw was an attachment for Batman's grapnel gun. A clamp-based tool which could be attached to the grapnel's wire, it was used to latch onto objects and pull them towards Batman. The Batclaw was often used as both a combat tool or create maneuverability options. The Batclaw was also used by Nightwing, Batgirl and Azrael.",
+            imageURL: "Batclaw"),
+        Equipment(
+            name: "Bat-Darts",
+            description: "Bat-Darts are hand-thrown knockout darts Batman carries in his Utility Belt.",
+            imageURL: "BatDarts"),
+        Equipment(
+            name: "Bat-Heater",
+            description: "The Bat-Heater was a small heating device used by Batman during the final battle with Mr. Freeze. It is designed to thaw anyone frozen in ice. When activated, the heater's Bat-symbols pulsate with red-hot light.",
+            imageURL: "BatHeater"),
+        Equipment(
+            name: "Bat-Laser",
+            description: "Bat-Lasers are the handheld weapons used by Batman, Robin and Batgirl during their battle with Mr. Freeze, Poison Ivy and Bane.",
+            imageURL: "BatLaser"),
+        Equipment(
+            name: "Batpoon",
+            description: "The Batpoon was a small Grappling Hook used by Batman and Robin. Created in the Dynamic Duo's early days, they could attach these to their Silken Cords, rather than the conventional method of attaching a Batarang to climb or swing over to objects. The Batpoon hooks were used in more dire situations when they needed a more secure line to escape danger. Batman later developed a Batpoon Launcher, a small pistol that fit into his Utility Belt that could fire the Batpoon hook like a harpoon gun. The pistol variation was only used once.",
+            imageURL: "Batpoon"),
+        Equipment(
+            name: "Bat-Shuriken",
+            description: "Bat-Shuriken are small razors thrown by Batman, usually to disarm an opponent by flinging them at an enemy's forearm. They are the modern alternative to the traditional large folding-Batarangs. Bat-Shuriken are instantly recognizable as Batman usually holds three of the between his fingers, also using them during melee combat. Sometimes they are coated with poison to knockout or frighten thugs.",
+            imageURL: "Bat-Shuriken"),
+        Equipment(
             name: "Utility Belt",
             description: "The Utility Belt is the iconic storage device used to carry most of Bruce Wayne's gadgets and equipment over his Batsuit. Often depicted as part of the Bat-Family members' costumes, it is used to house various equipment for the heroes to use or access at short notice. The exact contents of this belt are not known and Batman usually changes them to suit his needs. In some stories, his enemies have attempted to steal or replicate the utility belt, believing it will give them an advantage over him.",
             imageURL: "UtilityBelt"
         ),
         Equipment(
-            name: "Grappling Gun",
+            name: "Grapple Gun",
             description: "Grapple Guns are hi-tech pistols that fire small Grappling Hooks fitted on high-tensile wire. They are often used to scale buildings and swing to areas from long distances. They can also be used to offensively to pull enemies or object towards the user. Variations of the grapple guns have used constantly by Batman and the rest of the Bat-Family since the 1990s, though prototypes have been frequently appeared throughout comic history.",
-            imageURL: "GrapplingGun"
-        ),
-        Equipment(
-            name: "Batarang",
-            description: "Batarangs are bat-shaped throwing weapons used by Batman. These are the most basic and commonly used items in his arsenal. A vast array sizes and types have been designed, some of them razor sharp. Traditionally they are large blunt boomerangs used to knock thugs out. They can also be used as grappling hooks when attached to Batropes. Batman has also been known to use batarangs modified with additional tools and gadgets.",
-            imageURL: "Batarang"
-        ),
-        Equipment(
-            name: "Batmobile",
-            description: "The Batmobile is the primary mode of transportation for Batman. The vehicle is one of the most daunting components in his vast arsenal, keeping it stored in the Batcave when not in use. The Batmobile is used by Batman to patrol Gotham City and has gone through many iterations over the years. It is equipped with a wide array of gadgets and weapons, including but not limited to the ejection seat, the Batcomputer, and the ability to transform into the Batplane.",
-            imageURL: "Batmobile"
-        ),
-        Equipment(
-            name: "Bat-Signal",
-            description: "The Bat-Signal is a large searchlight with the emblem of a bat affixed to it. It is a specially modified Klieg searchlight with a stylized emblem of a bat affixed to the light. It is used by the Gotham City Police Department as a method of contacting and summoning Batman to their assistance. Though it is not always used, it is a method of contacting Batman when the city is in peril.",
-            imageURL: "BatSignal"
-        ),
-        Equipment(
-            name: "Batcomputer",
-            description: "The Batcomputer is the main computer system used by Batman. It is located in the Batcave and is used by Batman to analyze evidence, communicate with allies, and access the vast resources of the Bat-Family. The Batcomputer is one of the most advanced computer systems in the world and is capable of hacking into any system, analyzing any substance, and tracking any individual.",
-            imageURL: "Batcomputer"
-        ),
-        Equipment(
-            name: "Bat-Suit",
-            description: "The Bat-Suit is the iconic costume worn by Batman. It is a protective suit that is designed to help Batman fight crime and protect Gotham City. The suit is made of a high-tech material that is resistant to bullets, knives, and other weapons. It also has a built-in cape that allows Batman to glide through the air. The suit is equipped with a variety of gadgets and weapons, including but not limited to the utility belt, the grappling gun, and the batarang.",
-            imageURL: "BatSuit"
-        ),
-        Equipment(
-            name: "Batcave",
-            description: "The Batcave is the secret headquarters of Batman. It is located beneath Wayne Manor and is accessed through a hidden entrance. The Batcave is equipped with a wide array of gadgets and weapons, including but not limited to the Batcomputer, the Batmobile, and the Batsuit. It also serves as a training facility for Batman and the rest of the Bat-Family.",
-            imageURL: "Batcave"
-        ),
-        Equipment(
-            name: "Bat-Signal",
-            description: "The Bat-Signal is a large searchlight with the emblem of a bat affixed to it. It is a specially modified Klieg searchlight with a stylized emblem of a bat affixed to the light. It is used by the Gotham City Police Department as a method of contacting and summoning Batman to their assistance. Though it is not always used, it is a method of contacting Batman when the city is in peril.",
-            imageURL: "BatSignal"
+            imageURL: "GrappleGun"
         ),
     ]
     
@@ -114,7 +115,7 @@ extension CustomGadgetListTableViewCell: UICollectionViewDataSource {
 
 extension CustomGadgetListTableViewCell: UICollectionViewDelegateFlowLayout {
    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-       return CGSize(width: 100, height: 120)
+       return CGSize(width: 150, height: 120)
    }
     
     
