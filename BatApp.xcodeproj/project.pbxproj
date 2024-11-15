@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		980391D32CAC659A003DB494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980391D22CAC659A003DB494 /* Assets.xcassets */; };
 		980391D62CAC659A003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D52CAC659A003DB494 /* Base */; };
 		983D2D8C2CC2F7D700E125FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */; };
+		9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9847FABF2CD2B26C009EC8F7 /* Equipment.swift */; };
+		9854DF8E2CCEC671009CFE71 /* DetailsEnemyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */; };
 		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
 		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
 		98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659062CBC6A5C00326E5C /* EmailTextField.swift */; };
@@ -30,11 +32,17 @@
 		980391D52CAC659A003DB494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980391D72CAC659A003DB494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9847FABF2CD2B26C009EC8F7 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEnemyViewController.swift; sourceTree = "<group>"; };
 		98E659022CBC66C900326E5C /* Validable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validable.swift; sourceTree = "<group>"; };
 		98E659042CBC672A00326E5C /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
 		98E659062CBC6A5C00326E5C /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		98E659082CBC6BB800326E5C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9854DF842CCE580B009CFE71 /* Custom Cells */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Custom Cells"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		980391C32CAC6599003DB494 /* Frameworks */ = {
@@ -66,6 +74,8 @@
 		980391C82CAC6599003DB494 /* BatApp */ = {
 			isa = PBXGroup;
 			children = (
+				9847FABF2CD2B26C009EC8F7 /* Equipment.swift */,
+				9854DF842CCE580B009CFE71 /* Custom Cells */,
 				980391C92CAC6599003DB494 /* AppDelegate.swift */,
 				980391CB2CAC6599003DB494 /* SceneDelegate.swift */,
 				980391CD2CAC6599003DB494 /* ViewController.swift */,
@@ -78,6 +88,7 @@
 				98E659062CBC6A5C00326E5C /* EmailTextField.swift */,
 				98E659082CBC6BB800326E5C /* PasswordTextField.swift */,
 				983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */,
+				9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */,
 			);
 			path = BatApp;
 			sourceTree = "<group>";
@@ -96,6 +107,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9854DF842CCE580B009CFE71 /* Custom Cells */,
 			);
 			name = BatApp;
 			productName = BatApp;
@@ -157,10 +171,12 @@
 				980391CA2CAC6599003DB494 /* AppDelegate.swift in Sources */,
 				98E659092CBC6BB800326E5C /* PasswordTextField.swift in Sources */,
 				983D2D8C2CC2F7D700E125FD /* HomeViewController.swift in Sources */,
+				9854DF8E2CCEC671009CFE71 /* DetailsEnemyViewController.swift in Sources */,
 				98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */,
 				98E659032CBC66C900326E5C /* Validable.swift in Sources */,
 				980391CC2CAC6599003DB494 /* SceneDelegate.swift in Sources */,
 				98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */,
+				9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

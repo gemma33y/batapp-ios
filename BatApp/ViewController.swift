@@ -39,13 +39,7 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "fromLoginToHome" {
-            let destination = segue.destination as! HomeViewController
-            
-            destination.email = emailInput.text
-        }
-    }
+    
 
     @IBAction func loginEvent(_ sender: UIButton) {
         do {

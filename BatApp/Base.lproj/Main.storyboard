@@ -83,7 +83,7 @@
                     <connections>
                         <outlet property="emailInput" destination="umA-qr-2L3" id="Ade-Xy-quS"/>
                         <outlet property="passwordInput" destination="RYy-ah-72i" id="NPl-y2-JGw"/>
-                        <segue destination="FAw-J6-hZ3" kind="show" identifier="fromLoginToHome" id="yeU-6t-yP7"/>
+                        <segue destination="FAw-J6-hZ3" kind="show" identifier="fromLoginToHome" id="QA6-hT-ad2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,25 +98,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0s-tR-CpK">
-                                <rect key="frame" x="98" y="369" width="196" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dkL-gr-v7W">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FAw-J6-hZ3" id="v6E-0R-fSZ"/>
+                                    <outlet property="delegate" destination="FAw-J6-hZ3" id="ULP-IY-BWH"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tjK-4X-Kf4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dkL-gr-v7W" firstAttribute="top" secondItem="tjK-4X-Kf4" secondAttribute="top" id="1FH-Ty-RWV"/>
+                            <constraint firstItem="tjK-4X-Kf4" firstAttribute="bottom" secondItem="dkL-gr-v7W" secondAttribute="bottom" id="4T2-Gk-h13"/>
+                            <constraint firstItem="dkL-gr-v7W" firstAttribute="leading" secondItem="tjK-4X-Kf4" secondAttribute="leading" id="iy8-kj-nTn"/>
+                            <constraint firstItem="tjK-4X-Kf4" firstAttribute="trailing" secondItem="dkL-gr-v7W" secondAttribute="trailing" id="yGZ-Vl-6ia"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0h9-3c-dcI"/>
                     <connections>
-                        <outlet property="greetingLabel" destination="Y0s-tR-CpK" id="qCO-Dt-SPb"/>
+                        <outlet property="enemiesTable" destination="dkL-gr-v7W" id="rug-Iy-II5"/>
+                        <segue destination="meu-yG-pOl" kind="show" identifier="fromEnemiesToDetails" id="I3v-Ml-bRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9m-kL-erj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="4"/>
+            <point key="canvasLocation" x="938" y="4"/>
+        </scene>
+        <!--Details Enemy View Controller-->
+        <scene sceneID="4Sg-hK-gwF">
+            <objects>
+                <viewController id="meu-yG-pOl" customClass="DetailsEnemyViewController" customModule="BatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HZP-dh-8Vg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-gE-CSg">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LFX-Ws-XdT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ibo-gE-CSg" firstAttribute="top" secondItem="LFX-Ws-XdT" secondAttribute="top" id="1nt-Gz-Tbb"/>
+                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="trailing" secondItem="ibo-gE-CSg" secondAttribute="trailing" id="8Qj-BX-lvG"/>
+                            <constraint firstItem="LFX-Ws-XdT" firstAttribute="bottom" secondItem="ibo-gE-CSg" secondAttribute="bottom" id="V1l-Q5-ZX0"/>
+                            <constraint firstItem="ibo-gE-CSg" firstAttribute="leading" secondItem="LFX-Ws-XdT" secondAttribute="leading" id="abu-qU-fNX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qhb-0K-jdL"/>
+                    <connections>
+                        <outlet property="tableDetails" destination="ibo-gE-CSg" id="r1L-Qw-vvw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rU-Y5-VfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h39-SW-fzA">
