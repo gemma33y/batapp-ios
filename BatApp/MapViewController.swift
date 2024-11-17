@@ -72,7 +72,7 @@ class MapViewController: UIViewController {
        // Añadir la anotación al mapa
        map.addAnnotation(annotation)
        
-       // Opcional: Centrar el mapa en la anotación
+       // Centrar el mapa en la anotación
        let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
        map.setRegion(region, animated: true)
    }
@@ -96,6 +96,21 @@ class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
    // Cambiar estilo de la anotación
    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+       // Si la anotación es la ubicación del usuario, personalizarla
+       if let userLocation = annotation as? MKUserLocation {
+           var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "userLocation")
+           
+           if annotationView == nil {
+               annotationView = MKAnnotationView(annotation: userLocation, reuseIdentifier: "userLocation")
+           }
+           
+           // Establecer la imagen personalizada para la ubicación del usuario
+           annotationView?.image = UIImage(named: "batmanIMG")
+           annotationView?.canShowCallout = true
+           
+           return annotationView
+       }
+       
        // Si la anotación es la del usuario, sale de la función -> return nil. No queremos modificar el aspecto por defecto
        guard !(annotation is MKUserLocation) else { return nil }
        
@@ -106,8 +121,8 @@ extension MapViewController: MKMapViewDelegate {
            annotationView.image = UIImage(named: customAnnotation.imageName ?? "")
            
            // Establecer el título y subtítulo en el callout (burbuja)
-           annotationView.canShowCallout = true  // Esto permite que se muestren el título y subtítulo en el callout
-           annotationView.annotation = annotation  // Asignar la anotación a la vista de la anotación
+           annotationView.canShowCallout = true
+           annotationView.annotation = annotation
        }
        
        
