@@ -15,6 +15,7 @@
 		980391D62CAC659A003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D52CAC659A003DB494 /* Base */; };
 		983D2D8C2CC2F7D700E125FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */; };
 		9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9847FABF2CD2B26C009EC8F7 /* Equipment.swift */; };
+		984A91332CE79BCB0048AAC5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A91322CE79BCB0048AAC5 /* MapViewController.swift */; };
 		9854DF8E2CCEC671009CFE71 /* DetailsEnemyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */; };
 		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
 		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
@@ -33,6 +34,7 @@
 		980391D72CAC659A003DB494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9847FABF2CD2B26C009EC8F7 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		984A91322CE79BCB0048AAC5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEnemyViewController.swift; sourceTree = "<group>"; };
 		98E659022CBC66C900326E5C /* Validable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validable.swift; sourceTree = "<group>"; };
 		98E659042CBC672A00326E5C /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				98E659082CBC6BB800326E5C /* PasswordTextField.swift */,
 				983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */,
 				9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */,
+				984A91322CE79BCB0048AAC5 /* MapViewController.swift */,
 			);
 			path = BatApp;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				980391CC2CAC6599003DB494 /* SceneDelegate.swift in Sources */,
 				98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */,
 				9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */,
+				984A91332CE79BCB0048AAC5 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +334,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BatApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "I want your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "I want your location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "I want your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I want your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -357,6 +365,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BatApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "I want your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "I want your location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "I want your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I want your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

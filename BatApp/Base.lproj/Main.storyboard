@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -83,14 +84,14 @@
                     <connections>
                         <outlet property="emailInput" destination="umA-qr-2L3" id="Ade-Xy-quS"/>
                         <outlet property="passwordInput" destination="RYy-ah-72i" id="NPl-y2-JGw"/>
-                        <segue destination="FAw-J6-hZ3" kind="show" identifier="fromLoginToHome" id="QA6-hT-ad2"/>
+                        <segue destination="5nf-V6-1B7" kind="show" identifier="fromLoginToHome" id="2Ji-g4-UuG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="cYw-VG-8Wl">
             <objects>
                 <viewController id="FAw-J6-hZ3" customClass="HomeViewController" customModule="BatApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dkL-gr-v7W">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="FAw-J6-hZ3" id="v6E-0R-fSZ"/>
@@ -116,6 +117,7 @@
                             <constraint firstItem="tjK-4X-Kf4" firstAttribute="trailing" secondItem="dkL-gr-v7W" secondAttribute="trailing" id="yGZ-Vl-6ia"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="bhC-4m-MJw"/>
                     <navigationItem key="navigationItem" id="0h9-3c-dcI"/>
                     <connections>
                         <outlet property="enemiesTable" destination="dkL-gr-v7W" id="rug-Iy-II5"/>
@@ -124,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9m-kL-erj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="4"/>
+            <point key="canvasLocation" x="2027" y="-476"/>
         </scene>
         <!--Details Enemy View Controller-->
         <scene sceneID="4Sg-hK-gwF">
@@ -155,7 +157,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rU-Y5-VfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700" y="4"/>
+            <point key="canvasLocation" x="3008" y="-476"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="tdW-wV-sFR">
+            <objects>
+                <viewController id="uOL-qv-EHq" customClass="MapViewController" customModule="BatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RAV-WM-uDj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" showsUserTrackingButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAo-E7-5aB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bKD-tf-UYC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZAo-E7-5aB" firstAttribute="top" secondItem="bKD-tf-UYC" secondAttribute="top" id="XgF-7d-ZnY"/>
+                            <constraint firstItem="ZAo-E7-5aB" firstAttribute="bottom" secondItem="bKD-tf-UYC" secondAttribute="bottom" id="qHX-n8-9Kf"/>
+                            <constraint firstItem="ZAo-E7-5aB" firstAttribute="leading" secondItem="bKD-tf-UYC" secondAttribute="leading" id="sic-ag-9bm"/>
+                            <constraint firstItem="ZAo-E7-5aB" firstAttribute="trailing" secondItem="bKD-tf-UYC" secondAttribute="trailing" id="wKU-xD-GIb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="7Ib-zC-SeL"/>
+                    <connections>
+                        <outlet property="map" destination="ZAo-E7-5aB" id="M5J-GS-Jzl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEk-36-Ks1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2027" y="249"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="y0s-31-pH5">
+            <objects>
+                <tabBarController id="5nf-V6-1B7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="inK-iJ-QiY"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bhB-HS-cxw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FAw-J6-hZ3" kind="relationship" relationship="viewControllers" id="Fmx-l1-cc5"/>
+                        <segue destination="uOL-qv-EHq" kind="relationship" relationship="viewControllers" id="ffp-dS-EVH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5S-zP-FmF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h39-SW-fzA">
@@ -176,6 +228,8 @@
     </scenes>
     <resources>
         <image name="batman-logo" width="565" height="352"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="map" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
