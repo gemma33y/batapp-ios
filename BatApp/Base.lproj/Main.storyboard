@@ -184,6 +184,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="7Ib-zC-SeL"/>
                     <connections>
                         <outlet property="map" destination="ZAo-E7-5aB" id="M5J-GS-Jzl"/>
+                        <segue destination="meu-yG-pOl" kind="show" identifier="fromMapToEnemy" id="AOS-Iy-hqn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEk-36-Ks1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -209,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="1126" y="4"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Init Navigation View Controller-->
         <scene sceneID="h39-SW-fzA">
             <objects>
-                <navigationController navigationBarHidden="YES" id="mkt-wT-mgl" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="mkt-wT-mgl" customClass="InitNavigationViewController" customModule="BatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="beG-2d-WHt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yg1-Yd-vad">
                         <autoresizingMask key="autoresizingMask"/>
@@ -226,6 +227,9 @@
             <point key="canvasLocation" x="-912" y="416"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AOS-Iy-hqn"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="batman-logo" width="565" height="352"/>
         <image name="house" catalog="system" width="128" height="104"/>

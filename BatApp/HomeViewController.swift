@@ -8,11 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    struct Enemy {
-        let name: String
-        let imageURL: String
-        let description: String
-    }
+   
  
     let enemies: [Enemy] = [
         Enemy(
@@ -130,7 +126,7 @@ class HomeViewController: UIViewController {
     
     
     @IBOutlet weak var enemiesTable: UITableView!
-    
+
     private func initializeCustomCell(){
         enemiesTable.register(UINib(nibName: "EnemyCustomTableViewCell", bundle: .main), forCellReuseIdentifier: "enemyCustomCell")
         
@@ -193,6 +189,7 @@ class HomeViewController: UIViewController {
     }
 
 }
+
 
 
 extension HomeViewController: UITableViewDataSource {

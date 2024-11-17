@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var emailInput: UITextField!
@@ -14,7 +15,7 @@ class ViewController: UIViewController {
     
     var emailTextField: EmailTextField?
     var passwordTextField: PasswordTextField?
-    
+
     
     enum LoginError: Error {
         case emptyPassword
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         print("Login: viewDidLoad")
 
         emailTextField = EmailTextField(textInput: emailInput)
@@ -91,4 +94,5 @@ class ViewController: UIViewController {
         print("Login: deinit")
     }
 }
+
 
