@@ -85,9 +85,9 @@ class MapViewController: UIViewController {
                 
                 let enemy = enemies?[id]
                 
-                destination.nameEnemyText = enemy?.name
-                destination.imageEnemyImage = UIImage(named: enemy?.imageURL ?? "")
-                destination.descriptionEnemyText = enemy?.description
+                destination.nameCharacterText = enemy?.name
+                destination.imageCharacterImage = enemy?.imageURL
+                destination.descriptionCharacterText = enemy?.description
             }
         }
     }

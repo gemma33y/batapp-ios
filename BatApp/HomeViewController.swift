@@ -65,7 +65,7 @@ class HomeViewController: UIViewController {
                                                 description: description
                                             )
                                 
-                                if (character.role.lowercased().contains("hero".lowercased())) {
+                                if (character.role.lowercased() == "hero".lowercased()) {
                                     self.heroes.append(character)
                                 } else if (character.role.lowercased().contains("villain".lowercased())) {
                                     self.villains.append(character)
@@ -122,9 +122,12 @@ class HomeViewController: UIViewController {
             if let destination = segue.destination as? DetailsEnemyViewController,
                let character = sender as? Character {  // Get the index of the enemy clicked
                 
-                destination.nameEnemyText = character.name
-                destination.imageEnemyImage = UIImage(named: character.imageURL)
-                destination.descriptionEnemyText = character.description
+                destination.nameCharacterText = character.name
+                destination.aliasCharacterText = character.alias
+                destination.imageCharacterImage = character.imageURL
+                destination.descriptionCharacterText = character.description
+                destination.roleCharacterText = character.role
+                destination.aliveCharacterText = character.alive
             }
         }
         
@@ -132,9 +135,9 @@ class HomeViewController: UIViewController {
             if let destination = segue.destination as? DetailsEnemyViewController,
                let gadget = sender as? Equipment {
                 print("Gadget: \(gadget)")
-                destination.nameEnemyText = gadget.name
-                destination.descriptionEnemyText = gadget.description
-                destination.imageEnemyImage = UIImage(named: gadget.imageURL)
+                destination.nameCharacterText = gadget.name
+                destination.descriptionCharacterText = gadget.description
+                destination.imageCharacterImage = gadget.imageURL
             }
         }
     }
@@ -183,7 +186,7 @@ extension HomeViewController: UITableViewDataSource {
                cell.enemyName?.text = character.alias
                cell.enemyImage?.sd_setImage(
                    with: URL(string: character.imageURL),
-                   placeholderImage: UIImage(named: character.alias)
+                   placeholderImage: UIImage(named: "batman-logo")
                )
                
                if !character.alive {
@@ -211,9 +214,15 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let selectedCharacter: Character
+        if indexPath.section == 1 {
+            selectedCharacter = heroes[indexPath.row] // Section 1: Heroes
+        } else {
+            selectedCharacter = villains[indexPath.row] // Section 2: Villains
+        }
         
         // Create a segue to show the description of the enemy -> fromEnemiesToDetail
-        performSegue(withIdentifier: "fromEnemiesToDetails", sender: indexPath)
+        performSegue(withIdentifier: "fromEnemiesToDetails", sender: selectedCharacter)
         
     }
     

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DetailsEnemyViewController: UIViewController {
 
@@ -14,9 +15,12 @@ class DetailsEnemyViewController: UIViewController {
     
     
     // Properties to receive data
-    var nameEnemyText: String?
-    var imageEnemyImage: UIImage?
-    var descriptionEnemyText: String?
+    var nameCharacterText: String?
+    var aliasCharacterText: String?
+    var imageCharacterImage: String?
+    var descriptionCharacterText: String?
+    var roleCharacterText: String?
+    var aliveCharacterText: Bool?
     
     private func initializeCustomCell(){
         tableDetails.register(UINib(nibName: "ImageTableViewCell", bundle: .main), forCellReuseIdentifier: "imageTableViewCell")
@@ -56,7 +60,7 @@ class DetailsEnemyViewController: UIViewController {
 
 extension DetailsEnemyViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        return roleCharacterText == nil ? 3 : 6
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -69,20 +73,36 @@ extension DetailsEnemyViewController: UITableViewDataSource {
         
         if indexPath.row == 0 {
             let imageCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! ImageTableViewCell
-            imageCell.imageCustom?.image = imageEnemyImage
+            imageCell.imageCustom?.sd_setImage(with: URL(string: imageCharacterImage ?? ""),
+                                               placeholderImage: UIImage(named: "batman-logo"))
             imageCell.selectionStyle = .none
             return imageCell
         } else if indexPath.row == 1 {
             let nameCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! TextTableViewCell
-            nameCell.textCustom?.text = nameEnemyText
+            nameCell.textCustom?.text = nameCharacterText
             nameCell.textCustom.textAlignment = .center // Center the text
             nameCell.textCustom.font = UIFont.systemFont(ofSize: 24, weight: .bold) // Change the font size of the text
             nameCell.selectionStyle = .none
             return nameCell
         } else {
+            var textToDisplay: String?
+            
             let descriptionCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! TextTableViewCell
             descriptionCell.textCustom?.text = nil
-            descriptionCell.textCustom?.text = descriptionEnemyText
+            
+            if (aliasCharacterText != nil && indexPath.row == 2) {
+                textToDisplay = "Real Name: " + (aliasCharacterText ?? "") 
+                descriptionCell.textCustom.textAlignment = .center // Center the text
+            } else if (roleCharacterText != nil && indexPath.row == 3) {
+                textToDisplay = "Role: " + (roleCharacterText ?? "")
+            } else if (aliveCharacterText != nil && indexPath.row == 4) {
+                textToDisplay = aliveCharacterText ?? true ? "Status: Alive" : "Status: Dead"
+            } else {
+                textToDisplay = descriptionCharacterText
+            }
+            
+            
+            descriptionCell.textCustom?.text = textToDisplay
             descriptionCell.selectionStyle = .none
             return descriptionCell
         }
