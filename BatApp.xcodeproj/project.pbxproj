@@ -20,6 +20,11 @@
 		9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9847FABF2CD2B26C009EC8F7 /* Equipment.swift */; };
 		984A91332CE79BCB0048AAC5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A91322CE79BCB0048AAC5 /* MapViewController.swift */; };
 		9854DF8E2CCEC671009CFE71 /* DetailsEnemyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */; };
+		988EDA742CF22A1A00F78452 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA732CF22A1A00F78452 /* Alamofire */; };
+		988EDA772CF22A5C00F78452 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA762CF22A5C00F78452 /* SwiftyJSON */; };
+		988EDA7A2CF22A7800F78452 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA792CF22A7800F78452 /* SDWebImage */; };
+		988EDA7C2CF22A7800F78452 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA7B2CF22A7800F78452 /* SDWebImageMapKit */; };
+		988EDA7F2CF22A9600F78452 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA7E2CF22A9600F78452 /* IQKeyboardManagerSwift */; };
 		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
 		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
 		98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659062CBC6A5C00326E5C /* EmailTextField.swift */; };
@@ -57,6 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988EDA7F2CF22A9600F78452 /* IQKeyboardManagerSwift in Frameworks */,
+				988EDA7A2CF22A7800F78452 /* SDWebImage in Frameworks */,
+				988EDA772CF22A5C00F78452 /* SwiftyJSON in Frameworks */,
+				988EDA7C2CF22A7800F78452 /* SDWebImageMapKit in Frameworks */,
+				988EDA742CF22A1A00F78452 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +162,12 @@
 				Base,
 			);
 			mainGroup = 980391BD2CAC6599003DB494;
+			packageReferences = (
+				988EDA722CF22A1A00F78452 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				988EDA752CF22A5C00F78452 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				988EDA782CF22A7800F78452 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				988EDA7D2CF22A9600F78452 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 980391C72CAC6599003DB494 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -421,6 +437,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		988EDA722CF22A1A00F78452 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		988EDA752CF22A5C00F78452 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		988EDA782CF22A7800F78452 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+		988EDA7D2CF22A9600F78452 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		988EDA732CF22A1A00F78452 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 988EDA722CF22A1A00F78452 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		988EDA762CF22A5C00F78452 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 988EDA752CF22A5C00F78452 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		988EDA792CF22A7800F78452 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 988EDA782CF22A7800F78452 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		988EDA7B2CF22A7800F78452 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 988EDA782CF22A7800F78452 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		988EDA7E2CF22A9600F78452 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 988EDA7D2CF22A9600F78452 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 980391BE2CAC6599003DB494 /* Project object */;
 }

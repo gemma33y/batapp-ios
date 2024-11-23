@@ -13,7 +13,7 @@ class MapViewController: UIViewController {
     
     @IBOutlet weak var map: MKMapView!
     
-    var enemies: [Enemy]?
+    var enemies: [Character]?
 
     
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class MapViewController: UIViewController {
         if let tabBarController = self.tabBarController,
            let firstVC = tabBarController.viewControllers?[0] as? HomeViewController {
             // Get the elements from the first view controller
-            self.enemies = firstVC.enemies
+            self.enemies = firstVC.villains
         }
    }
     
