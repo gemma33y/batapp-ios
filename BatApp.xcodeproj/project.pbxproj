@@ -13,6 +13,10 @@
 		980391D12CAC6599003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D02CAC6599003DB494 /* Base */; };
 		980391D32CAC659A003DB494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980391D22CAC659A003DB494 /* Assets.xcassets */; };
 		980391D62CAC659A003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D52CAC659A003DB494 /* Base */; };
+		9815E3352CFC786600FB9749 /* CoreStore in Frameworks */ = {isa = PBXBuildFile; productRef = 9815E3342CFC786600FB9749 /* CoreStore */; };
+		9815E3382CFC788700FB9749 /* BatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9815E3362CFC788700FB9749 /* BatApp.xcdatamodeld */; };
+		9815E3502CFC891C00FB9749 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815E34F2CFC891C00FB9749 /* MasterViewController.swift */; };
+		9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */; };
 		981F28562CEA606600DD1D87 /* InitNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */; };
 		981F28582CEA638100DD1D87 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F28572CEA637A00DD1D87 /* CustomAnnotation.swift */; };
 		981F286A2CEA6DB200DD1D87 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F28692CEA6DB000DD1D87 /* Enemy.swift */; };
@@ -40,6 +44,9 @@
 		980391D22CAC659A003DB494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980391D52CAC659A003DB494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980391D72CAC659A003DB494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9815E3372CFC788700FB9749 /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
+		9815E34F2CFC891C00FB9749 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitNavigationViewController.swift; sourceTree = "<group>"; };
 		981F28572CEA637A00DD1D87 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		981F28692CEA6DB000DD1D87 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
@@ -63,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				988EDA7F2CF22A9600F78452 /* IQKeyboardManagerSwift in Frameworks */,
+				9815E3352CFC786600FB9749 /* CoreStore in Frameworks */,
 				988EDA7A2CF22A7800F78452 /* SDWebImage in Frameworks */,
 				988EDA772CF22A5C00F78452 /* SwiftyJSON in Frameworks */,
 				988EDA7C2CF22A7800F78452 /* SDWebImageMapKit in Frameworks */,
@@ -111,6 +119,9 @@
 				9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */,
 				984A91322CE79BCB0048AAC5 /* MapViewController.swift */,
 				981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */,
+				9815E3362CFC788700FB9749 /* BatApp.xcdatamodeld */,
+				9815E34F2CFC891C00FB9749 /* MasterViewController.swift */,
+				9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */,
 			);
 			path = BatApp;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 				988EDA752CF22A5C00F78452 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				988EDA782CF22A7800F78452 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				988EDA7D2CF22A9600F78452 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				9815E3332CFC786600FB9749 /* XCRemoteSwiftPackageReference "CoreStore" */,
 			);
 			productRefGroup = 980391C72CAC6599003DB494 /* Products */;
 			projectDirPath = "";
@@ -197,11 +209,14 @@
 			files = (
 				980391CE2CAC6599003DB494 /* ViewController.swift in Sources */,
 				980391CA2CAC6599003DB494 /* AppDelegate.swift in Sources */,
+				9815E3502CFC891C00FB9749 /* MasterViewController.swift in Sources */,
 				98E659092CBC6BB800326E5C /* PasswordTextField.swift in Sources */,
+				9815E3382CFC788700FB9749 /* BatApp.xcdatamodeld in Sources */,
 				983D2D8C2CC2F7D700E125FD /* HomeViewController.swift in Sources */,
 				9854DF8E2CCEC671009CFE71 /* DetailsEnemyViewController.swift in Sources */,
 				98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */,
 				98E659032CBC66C900326E5C /* Validable.swift in Sources */,
+				9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */,
 				981F28582CEA638100DD1D87 /* CustomAnnotation.swift in Sources */,
 				981F28562CEA606600DD1D87 /* InitNavigationViewController.swift in Sources */,
 				980391CC2CAC6599003DB494 /* SceneDelegate.swift in Sources */,
@@ -439,6 +454,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9815E3332CFC786600FB9749 /* XCRemoteSwiftPackageReference "CoreStore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnEstropia/CoreStore";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.0;
+			};
+		};
 		988EDA722CF22A1A00F78452 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -474,6 +497,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9815E3342CFC786600FB9749 /* CoreStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9815E3332CFC786600FB9749 /* XCRemoteSwiftPackageReference "CoreStore" */;
+			productName = CoreStore;
+		};
 		988EDA732CF22A1A00F78452 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 988EDA722CF22A1A00F78452 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -500,6 +528,19 @@
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9815E3362CFC788700FB9749 /* BatApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9815E3372CFC788700FB9749 /* BatApp.xcdatamodel */,
+			);
+			currentVersion = 9815E3372CFC788700FB9749 /* BatApp.xcdatamodel */;
+			path = BatApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 980391BE2CAC6599003DB494 /* Project object */;
 }
