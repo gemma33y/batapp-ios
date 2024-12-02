@@ -14,7 +14,6 @@
 		980391D32CAC659A003DB494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980391D22CAC659A003DB494 /* Assets.xcassets */; };
 		980391D62CAC659A003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D52CAC659A003DB494 /* Base */; };
 		9815E3352CFC786600FB9749 /* CoreStore in Frameworks */ = {isa = PBXBuildFile; productRef = 9815E3342CFC786600FB9749 /* CoreStore */; };
-		9815E3382CFC788700FB9749 /* BatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9815E3362CFC788700FB9749 /* BatApp.xcdatamodeld */; };
 		9815E3502CFC891C00FB9749 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815E34F2CFC891C00FB9749 /* MasterViewController.swift */; };
 		9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */; };
 		981F28562CEA606600DD1D87 /* InitNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */; };
@@ -29,6 +28,9 @@
 		988EDA7A2CF22A7800F78452 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA792CF22A7800F78452 /* SDWebImage */; };
 		988EDA7C2CF22A7800F78452 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA7B2CF22A7800F78452 /* SDWebImageMapKit */; };
 		988EDA7F2CF22A9600F78452 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA7E2CF22A9600F78452 /* IQKeyboardManagerSwift */; };
+		98C112B92CFCB24C00119A4B /* NoteCoreStoreDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */; };
+		98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B72CFCB24C00119A4B /* NoteDAO.swift */; };
+		98C112BD2CFCB2B900119A4B /* BatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98C112BB2CFCB2B900119A4B /* BatApp.xcdatamodeld */; };
 		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
 		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
 		98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659062CBC6A5C00326E5C /* EmailTextField.swift */; };
@@ -44,7 +46,6 @@
 		980391D22CAC659A003DB494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980391D52CAC659A003DB494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980391D72CAC659A003DB494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9815E3372CFC788700FB9749 /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
 		9815E34F2CFC891C00FB9749 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitNavigationViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +55,9 @@
 		9847FABF2CD2B26C009EC8F7 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		984A91322CE79BCB0048AAC5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEnemyViewController.swift; sourceTree = "<group>"; };
+		98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCoreStoreDAO.swift; sourceTree = "<group>"; };
+		98C112B72CFCB24C00119A4B /* NoteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDAO.swift; sourceTree = "<group>"; };
+		98C112BC2CFCB2B900119A4B /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
 		98E659022CBC66C900326E5C /* Validable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validable.swift; sourceTree = "<group>"; };
 		98E659042CBC672A00326E5C /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
 		98E659062CBC6A5C00326E5C /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
@@ -119,11 +123,21 @@
 				9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */,
 				984A91322CE79BCB0048AAC5 /* MapViewController.swift */,
 				981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */,
-				9815E3362CFC788700FB9749 /* BatApp.xcdatamodeld */,
 				9815E34F2CFC891C00FB9749 /* MasterViewController.swift */,
 				9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */,
+				98C112B82CFCB24C00119A4B /* persistence */,
+				98C112BB2CFCB2B900119A4B /* BatApp.xcdatamodeld */,
 			);
 			path = BatApp;
+			sourceTree = "<group>";
+		};
+		98C112B82CFCB24C00119A4B /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */,
+				98C112B72CFCB24C00119A4B /* NoteDAO.swift */,
+			);
+			path = persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,11 +225,13 @@
 				980391CA2CAC6599003DB494 /* AppDelegate.swift in Sources */,
 				9815E3502CFC891C00FB9749 /* MasterViewController.swift in Sources */,
 				98E659092CBC6BB800326E5C /* PasswordTextField.swift in Sources */,
-				9815E3382CFC788700FB9749 /* BatApp.xcdatamodeld in Sources */,
 				983D2D8C2CC2F7D700E125FD /* HomeViewController.swift in Sources */,
 				9854DF8E2CCEC671009CFE71 /* DetailsEnemyViewController.swift in Sources */,
 				98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */,
 				98E659032CBC66C900326E5C /* Validable.swift in Sources */,
+				98C112B92CFCB24C00119A4B /* NoteCoreStoreDAO.swift in Sources */,
+				98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */,
+				98C112BD2CFCB2B900119A4B /* BatApp.xcdatamodeld in Sources */,
 				9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */,
 				981F28582CEA638100DD1D87 /* CustomAnnotation.swift in Sources */,
 				981F28562CEA606600DD1D87 /* InitNavigationViewController.swift in Sources */,
@@ -530,12 +546,12 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		9815E3362CFC788700FB9749 /* BatApp.xcdatamodeld */ = {
+		98C112BB2CFCB2B900119A4B /* BatApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9815E3372CFC788700FB9749 /* BatApp.xcdatamodel */,
+				98C112BC2CFCB2B900119A4B /* BatApp.xcdatamodel */,
 			);
-			currentVersion = 9815E3372CFC788700FB9749 /* BatApp.xcdatamodel */;
+			currentVersion = 98C112BC2CFCB2B900119A4B /* BatApp.xcdatamodel */;
 			path = BatApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

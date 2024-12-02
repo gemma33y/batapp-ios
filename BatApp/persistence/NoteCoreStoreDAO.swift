@@ -9,10 +9,10 @@ class NoteCoreStoreDAO: NoteDAO {
             asynchronous: { (transaction) -> Void in
                 let note = transaction.create(Into<Note>())
                 note.title = title
-                note.description = description
+                note.content = description
             },
             completion: { (result) -> Void in
-                handleCompletion(result, completion: completion)
+                self.handleCompletion(result, completion: completion)
             }
         )
     }
@@ -33,10 +33,10 @@ class NoteCoreStoreDAO: NoteDAO {
             asynchronous: { (transaction) -> Void in
                 let editableNote = transaction.edit(note)
                 editableNote?.title = newTitle ?? editableNote?.title
-                editableNote?.description = newDescription ?? editableNote?.description
+                editableNote?.content = newDescription ?? editableNote?.description
             },
             completion: { (result) -> Void in
-                handleCompletion(result, completion: completion)
+                self.handleCompletion(result, completion: completion)
             }
         )
     }
@@ -48,12 +48,12 @@ class NoteCoreStoreDAO: NoteDAO {
                 transaction.delete(note)
             },
             completion: { (result) -> Void in
-                handleCompletion(result, completion: completion)
+                self.handleCompletion(result, completion: completion)
             }
         )
     }
 
-    func handleCompletion(_ result: AsynchronousDataTransaction.Result, completion: @escaping (Result<Void, Error>) -> Void) {
+    func handleCompletion(_ result: AsynchronousDataTransaction.Result<Any>, completion: @escaping (Result<Void, Error>) -> Void) {
         switch result {
             // The transaction succeeded.
             case .success:

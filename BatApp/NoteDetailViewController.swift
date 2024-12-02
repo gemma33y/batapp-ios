@@ -8,32 +8,74 @@
 import UIKit
 
 class NoteDetailViewController: UIViewController {
+    @IBOutlet weak var tableDetails: UITableView!
     
-    @IBOutlet weak var titleLabel: UILabel!
-    
-    @IBOutlet weak var descriptionLabel: UILabel!
+    // Properties to receive data
+    var titleText: String?
+    var descriptionText: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        titleLabel.text = "Title"
-        descriptionLabel.text = "Description"
     }
     
     func updateContent(title: String, description: String) {
-        titleLabel.text = title
-        descriptionLabel.text = description
-       }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        titleText = title
+        descriptionText = description
     }
-    */
+    
+    private func cellIdentifier(for indexPath: IndexPath) -> String {
+        return "textTableViewCell"
+    }
+    
+    private func initializeCustomCell(){        
+        tableDetails.register(UINib(nibName: "TextTableViewCell", bundle: .main), forCellReuseIdentifier: "textTableViewCell")
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        tableDetails.dataSource = self
 
+        initializeCustomCell()
+        tableDetails.separatorStyle = .none // Remove separator line
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
 }
+
+
+extension NoteDetailViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return indexPath.row == 0 ? 316 : UITableView.automaticDimension
+    }
+
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let identifier = cellIdentifier(for: indexPath)
+        
+        if indexPath.row == 0 {
+            let nameCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! TextTableViewCell
+            nameCell.textCustom?.text = titleText
+            nameCell.textCustom.textAlignment = .center // Center the text
+            nameCell.textCustom.font = UIFont.systemFont(ofSize: 24, weight: .bold) // Change the font size of the text
+            nameCell.selectionStyle = .none
+            return nameCell
+        } else {
+            let descriptionCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! TextTableViewCell
+            descriptionCell.textCustom?.text = nil
+            
+            descriptionCell.textCustom?.text = descriptionText
+            descriptionCell.selectionStyle = .none
+            return descriptionCell
+        }
+    }
+}
+
+
