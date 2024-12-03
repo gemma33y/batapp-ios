@@ -9,69 +9,34 @@
 /* Begin PBXBuildFile section */
 		980391CA2CAC6599003DB494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980391C92CAC6599003DB494 /* AppDelegate.swift */; };
 		980391CC2CAC6599003DB494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980391CB2CAC6599003DB494 /* SceneDelegate.swift */; };
-		980391CE2CAC6599003DB494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980391CD2CAC6599003DB494 /* ViewController.swift */; };
 		980391D12CAC6599003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D02CAC6599003DB494 /* Base */; };
 		980391D32CAC659A003DB494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980391D22CAC659A003DB494 /* Assets.xcassets */; };
 		980391D62CAC659A003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D52CAC659A003DB494 /* Base */; };
 		9815E3352CFC786600FB9749 /* CoreStore in Frameworks */ = {isa = PBXBuildFile; productRef = 9815E3342CFC786600FB9749 /* CoreStore */; };
-		9815E3502CFC891C00FB9749 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815E34F2CFC891C00FB9749 /* MasterViewController.swift */; };
-		9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */; };
-		981F28562CEA606600DD1D87 /* InitNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */; };
-		981F28582CEA638100DD1D87 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F28572CEA637A00DD1D87 /* CustomAnnotation.swift */; };
-		981F286A2CEA6DB200DD1D87 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F28692CEA6DB000DD1D87 /* Enemy.swift */; };
-		983D2D8C2CC2F7D700E125FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */; };
-		9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9847FABF2CD2B26C009EC8F7 /* Equipment.swift */; };
-		984A91332CE79BCB0048AAC5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A91322CE79BCB0048AAC5 /* MapViewController.swift */; };
-		9854DF8E2CCEC671009CFE71 /* DetailsEnemyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */; };
 		988EDA742CF22A1A00F78452 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA732CF22A1A00F78452 /* Alamofire */; };
 		988EDA772CF22A5C00F78452 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA762CF22A5C00F78452 /* SwiftyJSON */; };
 		988EDA7A2CF22A7800F78452 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA792CF22A7800F78452 /* SDWebImage */; };
 		988EDA7C2CF22A7800F78452 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA7B2CF22A7800F78452 /* SDWebImageMapKit */; };
 		988EDA7F2CF22A9600F78452 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA7E2CF22A9600F78452 /* IQKeyboardManagerSwift */; };
-		98C112B92CFCB24C00119A4B /* NoteCoreStoreDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */; };
-		98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B72CFCB24C00119A4B /* NoteDAO.swift */; };
 		98C4DF912CFEFAAD0034E0D8 /* BatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */; };
-		98C4DF932CFF058E0034E0D8 /* FakeNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF922CFF058C0034E0D8 /* FakeNote.swift */; };
-		98C4DF952CFF16B90034E0D8 /* CreateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF942CFF16B90034E0D8 /* CreateNoteViewController.swift */; };
-		98C4DF972CFF171B0034E0D8 /* NotEmptyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF962CFF171B0034E0D8 /* NotEmptyTextField.swift */; };
-		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
-		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
-		98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659062CBC6A5C00326E5C /* EmailTextField.swift */; };
-		98E659092CBC6BB800326E5C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659082CBC6BB800326E5C /* PasswordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		980391C62CAC6599003DB494 /* BatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		980391C92CAC6599003DB494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		980391CB2CAC6599003DB494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		980391CD2CAC6599003DB494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		980391D02CAC6599003DB494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		980391D22CAC659A003DB494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980391D52CAC659A003DB494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980391D72CAC659A003DB494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9815E34F2CFC891C00FB9749 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
-		981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitNavigationViewController.swift; sourceTree = "<group>"; };
-		981F28572CEA637A00DD1D87 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
-		981F28692CEA6DB000DD1D87 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
-		983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		9847FABF2CD2B26C009EC8F7 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
-		984A91322CE79BCB0048AAC5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEnemyViewController.swift; sourceTree = "<group>"; };
-		98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCoreStoreDAO.swift; sourceTree = "<group>"; };
-		98C112B72CFCB24C00119A4B /* NoteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDAO.swift; sourceTree = "<group>"; };
 		98C4DF902CFEFAAD0034E0D8 /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
-		98C4DF922CFF058C0034E0D8 /* FakeNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNote.swift; sourceTree = "<group>"; };
-		98C4DF942CFF16B90034E0D8 /* CreateNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteViewController.swift; sourceTree = "<group>"; };
-		98C4DF962CFF171B0034E0D8 /* NotEmptyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmptyTextField.swift; sourceTree = "<group>"; };
-		98E659022CBC66C900326E5C /* Validable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validable.swift; sourceTree = "<group>"; };
-		98E659042CBC672A00326E5C /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
-		98E659062CBC6A5C00326E5C /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
-		98E659082CBC6BB800326E5C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9854DF842CCE580B009CFE71 /* Custom Cells */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Custom Cells"; sourceTree = "<group>"; };
+		987E76DC2CFF8C74007B3F54 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
+		987E76DE2CFF908C007B3F54 /* Elements */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Elements; sourceTree = "<group>"; };
+		987E76EC2CFF9117007B3F54 /* Persistence */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Persistence; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,43 +75,19 @@
 		980391C82CAC6599003DB494 /* BatApp */ = {
 			isa = PBXGroup;
 			children = (
-				98C4DF962CFF171B0034E0D8 /* NotEmptyTextField.swift */,
-				98C4DF922CFF058C0034E0D8 /* FakeNote.swift */,
-				981F28692CEA6DB000DD1D87 /* Enemy.swift */,
-				981F28572CEA637A00DD1D87 /* CustomAnnotation.swift */,
-				9847FABF2CD2B26C009EC8F7 /* Equipment.swift */,
+				987E76EC2CFF9117007B3F54 /* Persistence */,
+				987E76DE2CFF908C007B3F54 /* Elements */,
+				987E76DC2CFF8C74007B3F54 /* Controllers */,
 				9854DF842CCE580B009CFE71 /* Custom Cells */,
 				980391C92CAC6599003DB494 /* AppDelegate.swift */,
 				980391CB2CAC6599003DB494 /* SceneDelegate.swift */,
-				980391CD2CAC6599003DB494 /* ViewController.swift */,
 				980391CF2CAC6599003DB494 /* Main.storyboard */,
 				980391D22CAC659A003DB494 /* Assets.xcassets */,
 				980391D42CAC659A003DB494 /* LaunchScreen.storyboard */,
 				980391D72CAC659A003DB494 /* Info.plist */,
-				98E659022CBC66C900326E5C /* Validable.swift */,
-				98E659042CBC672A00326E5C /* ValidableTextField.swift */,
-				98E659062CBC6A5C00326E5C /* EmailTextField.swift */,
-				98E659082CBC6BB800326E5C /* PasswordTextField.swift */,
-				983D2D8B2CC2F7D700E125FD /* HomeViewController.swift */,
-				9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */,
-				984A91322CE79BCB0048AAC5 /* MapViewController.swift */,
-				981F28552CEA606600DD1D87 /* InitNavigationViewController.swift */,
-				9815E34F2CFC891C00FB9749 /* MasterViewController.swift */,
-				9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */,
-				98C112B82CFCB24C00119A4B /* persistence */,
 				98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */,
-				98C4DF942CFF16B90034E0D8 /* CreateNoteViewController.swift */,
 			);
 			path = BatApp;
-			sourceTree = "<group>";
-		};
-		98C112B82CFCB24C00119A4B /* persistence */ = {
-			isa = PBXGroup;
-			children = (
-				98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */,
-				98C112B72CFCB24C00119A4B /* NoteDAO.swift */,
-			);
-			path = persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +107,9 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9854DF842CCE580B009CFE71 /* Custom Cells */,
+				987E76DC2CFF8C74007B3F54 /* Controllers */,
+				987E76DE2CFF908C007B3F54 /* Elements */,
+				987E76EC2CFF9117007B3F54 /* Persistence */,
 			);
 			name = BatApp;
 			productName = BatApp;
@@ -230,27 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980391CE2CAC6599003DB494 /* ViewController.swift in Sources */,
 				980391CA2CAC6599003DB494 /* AppDelegate.swift in Sources */,
-				9815E3502CFC891C00FB9749 /* MasterViewController.swift in Sources */,
-				98E659092CBC6BB800326E5C /* PasswordTextField.swift in Sources */,
-				983D2D8C2CC2F7D700E125FD /* HomeViewController.swift in Sources */,
-				9854DF8E2CCEC671009CFE71 /* DetailsEnemyViewController.swift in Sources */,
-				98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */,
-				98E659032CBC66C900326E5C /* Validable.swift in Sources */,
-				98C112B92CFCB24C00119A4B /* NoteCoreStoreDAO.swift in Sources */,
-				98C4DF972CFF171B0034E0D8 /* NotEmptyTextField.swift in Sources */,
-				98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */,
-				9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */,
-				981F28582CEA638100DD1D87 /* CustomAnnotation.swift in Sources */,
-				981F28562CEA606600DD1D87 /* InitNavigationViewController.swift in Sources */,
-				98C4DF932CFF058E0034E0D8 /* FakeNote.swift in Sources */,
 				980391CC2CAC6599003DB494 /* SceneDelegate.swift in Sources */,
-				981F286A2CEA6DB200DD1D87 /* Enemy.swift in Sources */,
-				98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */,
-				9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */,
-				984A91332CE79BCB0048AAC5 /* MapViewController.swift in Sources */,
-				98C4DF952CFF16B90034E0D8 /* CreateNoteViewController.swift in Sources */,
 				98C4DF912CFEFAAD0034E0D8 /* BatApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

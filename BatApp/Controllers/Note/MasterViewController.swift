@@ -126,7 +126,7 @@ extension MasterViewController: UITableViewDataSource {
                         DispatchQueue.main.async {
                             self.notes.remove(at: indexPath.row)
                             self.fakeNotes.remove(at: indexPath.row)
-                            tableView.deleteRows(at: [indexPath], with: .fade)
+                            tableView.deleteRows(at: [indexPath], with: .automatic)
                         }
                     case .failure(let error):
                         // Show an error alert
