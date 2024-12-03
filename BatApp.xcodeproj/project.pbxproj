@@ -30,7 +30,7 @@
 		988EDA7F2CF22A9600F78452 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA7E2CF22A9600F78452 /* IQKeyboardManagerSwift */; };
 		98C112B92CFCB24C00119A4B /* NoteCoreStoreDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */; };
 		98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B72CFCB24C00119A4B /* NoteDAO.swift */; };
-		98C112BD2CFCB2B900119A4B /* BatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98C112BB2CFCB2B900119A4B /* BatApp.xcdatamodeld */; };
+		98C4DF912CFEFAAD0034E0D8 /* BatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */; };
 		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
 		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
 		98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659062CBC6A5C00326E5C /* EmailTextField.swift */; };
@@ -57,7 +57,7 @@
 		9854DF8D2CCEC671009CFE71 /* DetailsEnemyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEnemyViewController.swift; sourceTree = "<group>"; };
 		98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCoreStoreDAO.swift; sourceTree = "<group>"; };
 		98C112B72CFCB24C00119A4B /* NoteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDAO.swift; sourceTree = "<group>"; };
-		98C112BC2CFCB2B900119A4B /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
+		98C4DF902CFEFAAD0034E0D8 /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
 		98E659022CBC66C900326E5C /* Validable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validable.swift; sourceTree = "<group>"; };
 		98E659042CBC672A00326E5C /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
 		98E659062CBC6A5C00326E5C /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 				9815E34F2CFC891C00FB9749 /* MasterViewController.swift */,
 				9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */,
 				98C112B82CFCB24C00119A4B /* persistence */,
-				98C112BB2CFCB2B900119A4B /* BatApp.xcdatamodeld */,
+				98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */,
 			);
 			path = BatApp;
 			sourceTree = "<group>";
@@ -231,7 +231,6 @@
 				98E659032CBC66C900326E5C /* Validable.swift in Sources */,
 				98C112B92CFCB24C00119A4B /* NoteCoreStoreDAO.swift in Sources */,
 				98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */,
-				98C112BD2CFCB2B900119A4B /* BatApp.xcdatamodeld in Sources */,
 				9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */,
 				981F28582CEA638100DD1D87 /* CustomAnnotation.swift in Sources */,
 				981F28562CEA606600DD1D87 /* InitNavigationViewController.swift in Sources */,
@@ -240,6 +239,7 @@
 				98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */,
 				9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */,
 				984A91332CE79BCB0048AAC5 /* MapViewController.swift in Sources */,
+				98C4DF912CFEFAAD0034E0D8 /* BatApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,12 +546,12 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		98C112BB2CFCB2B900119A4B /* BatApp.xcdatamodeld */ = {
+		98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				98C112BC2CFCB2B900119A4B /* BatApp.xcdatamodel */,
+				98C4DF902CFEFAAD0034E0D8 /* BatApp.xcdatamodel */,
 			);
-			currentVersion = 98C112BC2CFCB2B900119A4B /* BatApp.xcdatamodel */;
+			currentVersion = 98C4DF902CFEFAAD0034E0D8 /* BatApp.xcdatamodel */;
 			path = BatApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
