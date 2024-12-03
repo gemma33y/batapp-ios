@@ -10,6 +10,7 @@ class MasterViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var fakeNotes: [FakeNote] = []
     var notes: [Note] = []
         
     let noteDAO = NoteCoreStoreDAO()
@@ -35,15 +36,12 @@ class MasterViewController: UIViewController {
             switch result {
                 case .success(let fetchedNotes):
                     // Clear the current notes array
-                   self.notes.removeAll()
+                    self.notes = fetchedNotes
 
                    // Add each note one by one
                    for note in fetchedNotes {
-                       print("Resolviendo objeto: \(note)")
-                       print("Time: \(note.date)")
-                       print("Content: \(note.content)")
-                       print("Title: \(note.title)")
-                       self.notes.append(note) // Add the note to the array
+                       let test = FakeNote(title: note.title!, content: note.content!, date: note.date!)
+                       self.fakeNotes.append(test)
                    }
                     DispatchQueue.main.async() {
                         self.tableView.reloadData()
@@ -62,7 +60,7 @@ class MasterViewController: UIViewController {
         if segue.identifier == "fromNoteToDetails" {
 
             if let destination = segue.destination as? NoteDetailViewController,
-               let note = sender as? Note {  // Get the index of the enemy clicked
+               let note = sender as? FakeNote {  // Get the index of the enemy clicked
                 
                 destination.descriptionText = note.content
                 destination.titleText = note.title
@@ -88,24 +86,20 @@ extension MasterViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! NoteTableViewCell
 
        
-        let note = self.notes[indexPath.row]
+        let note = self.fakeNotes[indexPath.row]
         // Debug: Imprimir el estado del objeto
         print("Accediendo a la celda:")
-        print("Título: \(note.title ?? "no title")")
-        print("Contenido: \(note.content ?? "no content")")
+        print("Título: \(note.title)")
+        print("Contenido: \(note.content)")
         print("Time: \(note.date)")
         
         // Configure the cell
-        cell.titleLabel.text = note.title ?? "No title"
+        cell.titleLabel.text = note.title
         cell.titleLabel.textColor = .black
 
-        if let date = note.date {
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-            cell.timeLabel.text = dateFormatter.string(from: date)
-        } else {
-            cell.timeLabel.text = "No date"
-        }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        cell.timeLabel.text = dateFormatter.string(from: note.date)
         cell.timeLabel.textColor = .lightGray
 
         return cell
@@ -132,6 +126,7 @@ extension MasterViewController: UITableViewDataSource {
                         // Remove the note from the local array and update the UI
                         DispatchQueue.main.async {
                             self.notes.remove(at: indexPath.row)
+                            self.fakeNotes.remove(at: indexPath.row)
                             tableView.deleteRows(at: [indexPath], with: .fade)
                         }
                     case .failure(let error):
@@ -170,6 +165,6 @@ extension MasterViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         // Create a segue to show the description of the enemy -> fromEnemiesToDetail
-        performSegue(withIdentifier: "fromNoteToDetails", sender: notes[indexPath.row])
+        performSegue(withIdentifier: "fromNoteToDetails", sender: fakeNotes[indexPath.row])
     }
 }

@@ -31,6 +31,7 @@
 		98C112B92CFCB24C00119A4B /* NoteCoreStoreDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */; };
 		98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B72CFCB24C00119A4B /* NoteDAO.swift */; };
 		98C4DF912CFEFAAD0034E0D8 /* BatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */; };
+		98C4DF932CFF058E0034E0D8 /* FakeNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF922CFF058C0034E0D8 /* FakeNote.swift */; };
 		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
 		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
 		98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659062CBC6A5C00326E5C /* EmailTextField.swift */; };
@@ -58,6 +59,7 @@
 		98C112B62CFCB24C00119A4B /* NoteCoreStoreDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCoreStoreDAO.swift; sourceTree = "<group>"; };
 		98C112B72CFCB24C00119A4B /* NoteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDAO.swift; sourceTree = "<group>"; };
 		98C4DF902CFEFAAD0034E0D8 /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
+		98C4DF922CFF058C0034E0D8 /* FakeNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNote.swift; sourceTree = "<group>"; };
 		98E659022CBC66C900326E5C /* Validable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validable.swift; sourceTree = "<group>"; };
 		98E659042CBC672A00326E5C /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
 		98E659062CBC6A5C00326E5C /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		980391C82CAC6599003DB494 /* BatApp */ = {
 			isa = PBXGroup;
 			children = (
+				98C4DF922CFF058C0034E0D8 /* FakeNote.swift */,
 				981F28692CEA6DB000DD1D87 /* Enemy.swift */,
 				981F28572CEA637A00DD1D87 /* CustomAnnotation.swift */,
 				9847FABF2CD2B26C009EC8F7 /* Equipment.swift */,
@@ -234,6 +237,7 @@
 				9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */,
 				981F28582CEA638100DD1D87 /* CustomAnnotation.swift in Sources */,
 				981F28562CEA606600DD1D87 /* InitNavigationViewController.swift in Sources */,
+				98C4DF932CFF058E0034E0D8 /* FakeNote.swift in Sources */,
 				980391CC2CAC6599003DB494 /* SceneDelegate.swift in Sources */,
 				981F286A2CEA6DB200DD1D87 /* Enemy.swift in Sources */,
 				98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */,
