@@ -24,7 +24,6 @@ class MasterViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -37,6 +36,7 @@ class MasterViewController: UIViewController {
                 case .success(let fetchedNotes):
                     // Clear the current notes array
                     self.notes = fetchedNotes
+                    self.fakeNotes.removeAll()
 
                    // Add each note one by one
                    for note in fetchedNotes {
@@ -53,7 +53,6 @@ class MasterViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

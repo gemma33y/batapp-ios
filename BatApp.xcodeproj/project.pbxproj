@@ -32,6 +32,8 @@
 		98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C112B72CFCB24C00119A4B /* NoteDAO.swift */; };
 		98C4DF912CFEFAAD0034E0D8 /* BatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */; };
 		98C4DF932CFF058E0034E0D8 /* FakeNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF922CFF058C0034E0D8 /* FakeNote.swift */; };
+		98C4DF952CFF16B90034E0D8 /* CreateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF942CFF16B90034E0D8 /* CreateNoteViewController.swift */; };
+		98C4DF972CFF171B0034E0D8 /* NotEmptyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4DF962CFF171B0034E0D8 /* NotEmptyTextField.swift */; };
 		98E659032CBC66C900326E5C /* Validable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659022CBC66C900326E5C /* Validable.swift */; };
 		98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659042CBC672A00326E5C /* ValidableTextField.swift */; };
 		98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E659062CBC6A5C00326E5C /* EmailTextField.swift */; };
@@ -60,6 +62,8 @@
 		98C112B72CFCB24C00119A4B /* NoteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDAO.swift; sourceTree = "<group>"; };
 		98C4DF902CFEFAAD0034E0D8 /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
 		98C4DF922CFF058C0034E0D8 /* FakeNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNote.swift; sourceTree = "<group>"; };
+		98C4DF942CFF16B90034E0D8 /* CreateNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteViewController.swift; sourceTree = "<group>"; };
+		98C4DF962CFF171B0034E0D8 /* NotEmptyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmptyTextField.swift; sourceTree = "<group>"; };
 		98E659022CBC66C900326E5C /* Validable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validable.swift; sourceTree = "<group>"; };
 		98E659042CBC672A00326E5C /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
 		98E659062CBC6A5C00326E5C /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		980391C82CAC6599003DB494 /* BatApp */ = {
 			isa = PBXGroup;
 			children = (
+				98C4DF962CFF171B0034E0D8 /* NotEmptyTextField.swift */,
 				98C4DF922CFF058C0034E0D8 /* FakeNote.swift */,
 				981F28692CEA6DB000DD1D87 /* Enemy.swift */,
 				981F28572CEA637A00DD1D87 /* CustomAnnotation.swift */,
@@ -130,6 +135,7 @@
 				9815E3512CFC8BD100FB9749 /* NoteDetailViewController.swift */,
 				98C112B82CFCB24C00119A4B /* persistence */,
 				98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */,
+				98C4DF942CFF16B90034E0D8 /* CreateNoteViewController.swift */,
 			);
 			path = BatApp;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 				98E659072CBC6A5C00326E5C /* EmailTextField.swift in Sources */,
 				98E659032CBC66C900326E5C /* Validable.swift in Sources */,
 				98C112B92CFCB24C00119A4B /* NoteCoreStoreDAO.swift in Sources */,
+				98C4DF972CFF171B0034E0D8 /* NotEmptyTextField.swift in Sources */,
 				98C112BA2CFCB24C00119A4B /* NoteDAO.swift in Sources */,
 				9815E3522CFC8BD100FB9749 /* NoteDetailViewController.swift in Sources */,
 				981F28582CEA638100DD1D87 /* CustomAnnotation.swift in Sources */,
@@ -243,6 +250,7 @@
 				98E659052CBC672A00326E5C /* ValidableTextField.swift in Sources */,
 				9847FAC02CD2B26C009EC8F7 /* Equipment.swift in Sources */,
 				984A91332CE79BCB0048AAC5 /* MapViewController.swift in Sources */,
+				98C4DF952CFF16B90034E0D8 /* CreateNoteViewController.swift in Sources */,
 				98C4DF912CFEFAAD0034E0D8 /* BatApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

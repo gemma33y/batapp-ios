@@ -1,4 +1,5 @@
 import CoreStore
+import Foundation
 
 // Class that implements the NoteDAO operations using CoreStore Wrapper to interact with Swift DDBB.
 class NoteCoreStoreDAO: NoteDAO {
@@ -10,6 +11,7 @@ class NoteCoreStoreDAO: NoteDAO {
                 let note = transaction.create(Into<Note>())
                 note.title = title
                 note.content = description
+                note.date = Date()
                 return note
             },
             completion: { (result) -> Void in
