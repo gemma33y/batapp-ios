@@ -1,5 +1,5 @@
 {
-  "originHash" : "f61f3a17c92c6d4faeb4b552e172cf02d96939aa39143c01425589ed80c7b202",
+  "originHash" : "c06ac20026e11a71dd18566bec668fcf73499dff6d5a9a18de8c049df3d49fc3",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "e16d3481f5ed35f0472cb93350085853d754913f",
         "version" : "5.10.1"
+      }
+    },
+    {
+      "identity" : "corestore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JohnEstropia/CoreStore",
+      "state" : {
+        "revision" : "5a0d27cf343c6e341b0ef3c8d36104770b27a839",
+        "version" : "9.3.0"
       }
     },
     {
