@@ -21,7 +21,7 @@ class GalleryViewController: UIViewController {
 
         
         // Do any additional setup after loading the view.
-        self.title = "Gallery"
+        self.title = NSLocalizedString("gallery", comment: "")
         let plusButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addImage))
         self.navigationItem.rightBarButtonItem = plusButton
         
@@ -30,7 +30,6 @@ class GalleryViewController: UIViewController {
     }
     
     @objc func addImage() {
-        // TODO: Fer el segue
         print("ADD IMAGE")
         
         // Show gallery
