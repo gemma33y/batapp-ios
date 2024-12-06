@@ -21,7 +21,7 @@ class CreateNoteViewController: UIViewController {
         super.viewWillAppear(animated)
         
         // Settings of the navigation bar
-        self.title = "Create Note"
+        self.title =  NSLocalizedString("create_note", comment: "")
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     

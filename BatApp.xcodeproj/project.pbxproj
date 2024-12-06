@@ -34,10 +34,12 @@
 		981DD8E32D033FAD00BC79CD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		981DD8E52D03407600BC79CD /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Main.strings; sourceTree = "<group>"; };
 		981DD8E62D03407600BC79CD /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		981DD9062D03424800BC79CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		98C4DF902CFEFAAD0034E0D8 /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		981DD8EA2D03414800BC79CD /* Localizable */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Localizable; sourceTree = "<group>"; };
 		9854DF842CCE580B009CFE71 /* Custom Cells */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Custom Cells"; sourceTree = "<group>"; };
 		987E76DC2CFF8C74007B3F54 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
 		987E76DE2CFF908C007B3F54 /* Elements */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Elements; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				980391D42CAC659A003DB494 /* LaunchScreen.storyboard */,
 				980391D72CAC659A003DB494 /* Info.plist */,
 				98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */,
+				981DD8EA2D03414800BC79CD /* Localizable */,
 			);
 			path = BatApp;
 			sourceTree = "<group>";
@@ -111,6 +114,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				981DD8EA2D03414800BC79CD /* Localizable */,
 				9854DF842CCE580B009CFE71 /* Custom Cells */,
 				987E76DC2CFF8C74007B3F54 /* Controllers */,
 				987E76DE2CFF908C007B3F54 /* Elements */,
@@ -197,6 +201,7 @@
 				980391D02CAC6599003DB494 /* Base */,
 				981DD8E22D033FAC00BC79CD /* es */,
 				981DD8E52D03407600BC79CD /* ca */,
+				981DD9062D03424800BC79CD /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -331,6 +337,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

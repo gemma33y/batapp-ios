@@ -91,12 +91,13 @@ extension DetailsEnemyViewController: UITableViewDataSource {
             descriptionCell.textCustom?.text = nil
             
             if (aliasCharacterText != nil && indexPath.row == 2) {
-                textToDisplay = "Real Name: " + (aliasCharacterText ?? "") 
+                textToDisplay = "\(NSLocalizedString("real_name", comment: "")): " + (aliasCharacterText ?? "")
                 descriptionCell.textCustom.textAlignment = .center // Center the text
             } else if (roleCharacterText != nil && indexPath.row == 3) {
-                textToDisplay = "Role: " + (roleCharacterText ?? "")
+                
+                textToDisplay = "\(NSLocalizedString("role", comment: "")): " + (roleCharacterText ?? "")
             } else if (aliveCharacterText != nil && indexPath.row == 4) {
-                textToDisplay = aliveCharacterText ?? true ? "Status: Alive" : "Status: Dead"
+                textToDisplay = aliveCharacterText ?? true ? "\(NSLocalizedString("status", comment: "")): \(NSLocalizedString("alive", comment: ""))" : "\(NSLocalizedString("status", comment: "")): \(NSLocalizedString("dead", comment: ""))"
             } else {
                 textToDisplay = descriptionCharacterText
             }
