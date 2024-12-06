@@ -1,0 +1,56 @@
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "2ZU-NG-fBO"; */
+"2ZU-NG-fBO.configuration.title" = "Iniciar sesión";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2ZU-NG-fBO"; */
+"2ZU-NG-fBO.normalTitle" = "Botón";
+
+/* Class = "UITextField"; placeholder = "Write note description"; ObjectID = "6t8-H5-ioG"; */
+"6t8-H5-ioG.placeholder" = "Escribe la descripción de la nota";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "7Ib-zC-SeL"; */
+"7Ib-zC-SeL.title" = "Mapa";
+
+/* Class = "UITabBarItem"; title = "Gallery"; ObjectID = "7VO-Nb-IsL"; */
+"7VO-Nb-IsL.title" = "Galería";
+
+/* Class = "UILabel"; text = "© 2024 Gemma Yebra i Aaron Fort"; ObjectID = "8dw-cL-Lce"; */
+"8dw-cL-Lce.text" = "© 2024 Gemma Yebra y Aaron Fort";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "HeE-9A-keB"; */
+"HeE-9A-keB.title" = "Elemento";
+
+/* Class = "UIButton"; configuration.title = "Add Note"; ObjectID = "O3W-aj-WNp"; */
+"O3W-aj-WNp.configuration.title" = "Agregar nota";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "O3W-aj-WNp"; */
+"O3W-aj-WNp.normalTitle" = "Botón";
+
+/* Class = "UITextField"; placeholder = "Enter your batpassword..."; ObjectID = "RYy-ah-72i"; */
+"RYy-ah-72i.placeholder" = "Introduce tu batcontraseña...";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "bhC-4m-MJw"; */
+"bhC-4m-MJw.title" = "Inicio";
+
+/* Class = "UIButton"; configuration.title = "Camera"; ObjectID = "fjM-78-cEt"; */
+"fjM-78-cEt.configuration.title" = "Cámara";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fjM-78-cEt"; */
+"fjM-78-cEt.normalTitle" = "Botón";
+
+/* Class = "UIButton"; configuration.title = "Save note"; ObjectID = "h1T-cT-wPx"; */
+"h1T-cT-wPx.configuration.title" = "Guardar nota";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "h1T-cT-wPx"; */
+"h1T-cT-wPx.normalTitle" = "Botón";
+
+/* Class = "UILabel"; text = "Welcome to the BATAPP"; ObjectID = "hSl-qu-or3"; */
+"hSl-qu-or3.text" = "Bienvenido a la BATAPP";
+
+/* Class = "UITextField"; placeholder = "Enter note title"; ObjectID = "km1-nc-3EI"; */
+"km1-nc-3EI.placeholder" = "Introduce el título de la nota";
+
+/* Class = "UITabBarItem"; title = "Notes"; ObjectID = "u05-o5-4Hk"; */
+"u05-o5-4Hk.title" = "Notas";
+
+/* Class = "UITextField"; placeholder = "Enter your batemail..."; ObjectID = "umA-qr-2L3"; */
+"umA-qr-2L3.placeholder" = "Introduce tu batcorreo...";
