@@ -201,11 +201,11 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if (section == 0) {
-            return "Gadgets"
+            return NSLocalizedString("gadgets", comment: "")
         } else if (section == 1) {
-            return "Heroes"
+            return NSLocalizedString("heroes", comment: "")
         } else {
-            return "Villains"
+            return NSLocalizedString("villains", comment: "")
         }
     }
 }

@@ -13,6 +13,7 @@
 		980391D32CAC659A003DB494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980391D22CAC659A003DB494 /* Assets.xcassets */; };
 		980391D62CAC659A003DB494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 980391D52CAC659A003DB494 /* Base */; };
 		9815E3352CFC786600FB9749 /* CoreStore in Frameworks */ = {isa = PBXBuildFile; productRef = 9815E3342CFC786600FB9749 /* CoreStore */; };
+		981DD8E42D033FB500BC79CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980391CF2CAC6599003DB494 /* Main.storyboard */; };
 		988EDA742CF22A1A00F78452 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA732CF22A1A00F78452 /* Alamofire */; };
 		988EDA772CF22A5C00F78452 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA762CF22A5C00F78452 /* SwiftyJSON */; };
 		988EDA7A2CF22A7800F78452 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 988EDA792CF22A7800F78452 /* SDWebImage */; };
@@ -29,10 +30,16 @@
 		980391D22CAC659A003DB494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980391D52CAC659A003DB494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980391D72CAC659A003DB494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		981DD8E22D033FAC00BC79CD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		981DD8E32D033FAD00BC79CD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		981DD8E52D03407600BC79CD /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Main.strings; sourceTree = "<group>"; };
+		981DD8E62D03407600BC79CD /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		981DD9062D03424800BC79CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		98C4DF902CFEFAAD0034E0D8 /* BatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BatApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		981DD8EA2D03414800BC79CD /* Localizable */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Localizable; sourceTree = "<group>"; };
 		9854DF842CCE580B009CFE71 /* Custom Cells */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Custom Cells"; sourceTree = "<group>"; };
 		987E76DC2CFF8C74007B3F54 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
 		987E76DE2CFF908C007B3F54 /* Elements */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Elements; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 				980391D42CAC659A003DB494 /* LaunchScreen.storyboard */,
 				980391D72CAC659A003DB494 /* Info.plist */,
 				98C4DF8F2CFEFAAD0034E0D8 /* BatApp.xcdatamodeld */,
+				981DD8EA2D03414800BC79CD /* Localizable */,
 			);
 			path = BatApp;
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				981DD8EA2D03414800BC79CD /* Localizable */,
 				9854DF842CCE580B009CFE71 /* Custom Cells */,
 				987E76DC2CFF8C74007B3F54 /* Controllers */,
 				987E76DE2CFF908C007B3F54 /* Elements */,
@@ -138,6 +147,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				ca,
 			);
 			mainGroup = 980391BD2CAC6599003DB494;
 			packageReferences = (
@@ -161,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981DD8E42D033FB500BC79CD /* Main.storyboard in Resources */,
 				980391D32CAC659A003DB494 /* Assets.xcassets in Resources */,
 				980391D62CAC659A003DB494 /* Base in Resources */,
 				980391D12CAC6599003DB494 /* Base in Resources */,
@@ -187,6 +199,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				980391D02CAC6599003DB494 /* Base */,
+				981DD8E22D033FAC00BC79CD /* es */,
+				981DD8E52D03407600BC79CD /* ca */,
+				981DD9062D03424800BC79CD /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -195,6 +210,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				980391D52CAC659A003DB494 /* Base */,
+				981DD8E32D033FAD00BC79CD /* es */,
+				981DD8E62D03407600BC79CD /* ca */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -207,6 +224,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -261,6 +279,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -270,6 +289,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -317,6 +337,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -328,12 +349,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z293KP6GF8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BatApp/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "I want your location";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "I want your location";
-				INFOPLIST_KEY_NSLocationUsageDescription = "I want your location";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I want your location";
+				INFOPLIST_KEY_NSCameraUsageDescription = "I want to access to your camera.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To be able to track your position we need access to your location.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "To be able to track your position we need access to your location.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "To be able to track your position we need access to your location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To be able to track your position we need access to your location.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "I want to access to your gallery.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -359,12 +383,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z293KP6GF8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BatApp/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "I want your location";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "I want your location";
-				INFOPLIST_KEY_NSLocationUsageDescription = "I want your location";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I want your location";
+				INFOPLIST_KEY_NSCameraUsageDescription = "I want to access to your camera.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To be able to track your position we need access to your location.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "To be able to track your position we need access to your location.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "To be able to track your position we need access to your location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To be able to track your position we need access to your location.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "I want to access to your gallery.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
