@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mkt-wT-mgl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mkt-wT-mgl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9m-kL-erj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2027" y="-476"/>
+            <point key="canvasLocation" x="2027" y="-1032"/>
         </scene>
         <!--Details Enemy View Controller-->
         <scene sceneID="4Sg-hK-gwF">
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rU-Y5-VfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3008" y="-476"/>
+            <point key="canvasLocation" x="3007" y="-1032"/>
         </scene>
         <!--Map-->
         <scene sceneID="tdW-wV-sFR">
@@ -190,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEk-36-Ks1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2027" y="251"/>
+            <point key="canvasLocation" x="2027" y="-174"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="y0s-31-pH5">
@@ -207,6 +207,7 @@
                         <segue destination="uOL-qv-EHq" kind="relationship" relationship="viewControllers" id="ffp-dS-EVH"/>
                         <segue destination="6gs-hC-E2l" kind="relationship" relationship="viewControllers" id="fSb-KY-7Oo"/>
                         <segue destination="hUg-Bl-0Hw" kind="relationship" relationship="viewControllers" id="NJR-ZF-2nA"/>
+                        <segue destination="1NP-cM-Tnl" kind="relationship" relationship="viewControllers" id="4aW-Au-kMB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5S-zP-FmF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -274,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oY7-X8-t7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026.7175572519084" y="1096.4788732394368"/>
+            <point key="canvasLocation" x="2027" y="516"/>
         </scene>
         <!--Note Detail View Controller-->
         <scene sceneID="b0g-1Z-31m">
@@ -305,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9V-SG-PCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3069" y="1096"/>
+            <point key="canvasLocation" x="3068" y="515"/>
         </scene>
         <!--Item-->
         <scene sceneID="Zu4-ID-ntV">
@@ -322,7 +323,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7O-eQ-OTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2027" y="2575"/>
+            <point key="canvasLocation" x="2205" y="1924"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="6xk-FE-4TB">
@@ -386,7 +387,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9It-kd-dgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="PGq-U4-NOl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2889" y="2575"/>
+            <point key="canvasLocation" x="3066" y="1924"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="XUh-YO-1SW">
+            <objects>
+                <navigationController id="1NP-cM-Tnl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell.fill" catalog="system" id="IEX-FE-r5F"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ACG-yx-t1w">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rMP-jQ-BiX" kind="relationship" relationship="rootViewController" id="qog-kD-dS4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gc8-vQ-1Lo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163" y="2619"/>
+        </scene>
+        <!--Notification View Controller-->
+        <scene sceneID="kci-Vk-DrR">
+            <objects>
+                <viewController id="rMP-jQ-BiX" customClass="NotificationViewController" customModule="BatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wtj-18-n1m">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bco-8h-Gqc">
+                                <rect key="frame" x="16" y="703" width="361" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kqf-Oe-pFN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Notification"/>
+                                <connections>
+                                    <action selector="addNotification:" destination="rMP-jQ-BiX" eventType="touchUpInside" id="ZMt-CL-zUj"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="2nz-7z-doL">
+                                <rect key="frame" x="16" y="103" width="361" height="395"/>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nzh-GS-3Z7">
+                                <rect key="frame" x="16" y="514.33333333333337" width="361" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Ox-3v-nVN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CiA-ZM-2gM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2nz-7z-doL" firstAttribute="top" secondItem="CiA-ZM-2gM" secondAttribute="top" id="E0U-zq-5RB"/>
+                            <constraint firstItem="CiA-ZM-2gM" firstAttribute="trailing" secondItem="bco-8h-Gqc" secondAttribute="trailing" constant="16" id="RNt-Tx-a4J"/>
+                            <constraint firstItem="2nz-7z-doL" firstAttribute="leading" secondItem="CiA-ZM-2gM" secondAttribute="leading" constant="16" id="UDX-rH-rOh"/>
+                            <constraint firstItem="bco-8h-Gqc" firstAttribute="leading" secondItem="CiA-ZM-2gM" secondAttribute="leading" constant="16" id="WKr-eh-OZy"/>
+                            <constraint firstItem="CiA-ZM-2gM" firstAttribute="bottom" secondItem="bco-8h-Gqc" secondAttribute="bottom" constant="16" id="Y1v-gc-H1x"/>
+                            <constraint firstItem="CiA-ZM-2gM" firstAttribute="trailing" secondItem="Nzh-GS-3Z7" secondAttribute="trailing" constant="16" id="bL5-0p-Ykd"/>
+                            <constraint firstItem="Nzh-GS-3Z7" firstAttribute="top" secondItem="2nz-7z-doL" secondAttribute="bottom" constant="16" id="gjL-Bh-Cwk"/>
+                            <constraint firstItem="CiA-ZM-2gM" firstAttribute="trailing" secondItem="2nz-7z-doL" secondAttribute="trailing" constant="16" id="vJA-nH-PXn"/>
+                            <constraint firstItem="Nzh-GS-3Z7" firstAttribute="leading" secondItem="CiA-ZM-2gM" secondAttribute="leading" constant="16" id="wXf-cY-22j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2jF-6v-LHq"/>
+                    <connections>
+                        <outlet property="calendarDatePicker" destination="2nz-7z-doL" id="fGc-6E-Iej"/>
+                        <outlet property="notificationMessage" destination="Nzh-GS-3Z7" id="hfm-eW-HZ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B95-Yl-Nz0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3066.4122137404579" y="2617.605633802817"/>
         </scene>
         <!--Create Note View Controller-->
         <scene sceneID="dle-dI-8YL">
@@ -446,7 +519,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48k-Ne-kri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="RMJ-V3-CeK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3068" y="1816"/>
+            <point key="canvasLocation" x="3066" y="1239"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -454,6 +527,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="batman-logo" width="565" height="352"/>
+        <image name="bell.fill" catalog="system" width="123" height="128"/>
         <image name="camera" catalog="system" width="128" height="93"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="list.clipboard" catalog="system" width="98" height="128"/>

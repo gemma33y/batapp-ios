@@ -9,6 +9,7 @@ import UIKit
 import IQKeyboardManagerSwift
 import CoreStore
 
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,8 +22,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print("Error initializing the database: \(error.localizedDescription)")
         }
+                
+        // Request permission to show notifications
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if granted {
+                print("Permission granted")
+            } else if let error = error {
+                print("Permission denied: \(error.localizedDescription)")
+            }
+        }
+        
+        scheduleLocalNotification()
         
         return true
+    }
+    
+    func scheduleLocalNotification() {
+        // 1. Create content for the notification
+        let content = UNMutableNotificationContent()
+        content.title = "Hello, Swift Developer!"
+        content.body = "This is your first local notification 🚀"
+        content.sound = UNNotificationSound.default
+        
+        
+        // 2. Create a trigger for the notification (fire in 10 seconds)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        
+        // 3. Create a request with a unique identifier
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        // 4. Add the request to the Notification Center
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error scheduling notification: \(error.localizedDescription)")
+            } else {
+                print("Notification scheduled successfully!")
+            }
+        }
     }
 
     // MARK: UISceneSession Lifecycle

@@ -39,6 +39,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		980D87B52D0F411100BF7D59 /* Utilities */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utilities; sourceTree = "<group>"; };
 		981DD8EA2D03414800BC79CD /* Localizable */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Localizable; sourceTree = "<group>"; };
 		9854DF842CCE580B009CFE71 /* Custom Cells */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Custom Cells"; sourceTree = "<group>"; };
 		987E76DC2CFF8C74007B3F54 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		980391C82CAC6599003DB494 /* BatApp */ = {
 			isa = PBXGroup;
 			children = (
+				980D87B52D0F411100BF7D59 /* Utilities */,
 				987E76EC2CFF9117007B3F54 /* Persistence */,
 				987E76DE2CFF908C007B3F54 /* Elements */,
 				987E76DC2CFF8C74007B3F54 /* Controllers */,
@@ -114,6 +116,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				980D87B52D0F411100BF7D59 /* Utilities */,
 				981DD8EA2D03414800BC79CD /* Localizable */,
 				9854DF842CCE580B009CFE71 /* Custom Cells */,
 				987E76DC2CFF8C74007B3F54 /* Controllers */,
