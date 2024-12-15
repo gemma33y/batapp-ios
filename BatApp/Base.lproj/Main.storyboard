@@ -454,6 +454,7 @@
                     <navigationItem key="navigationItem" id="2jF-6v-LHq"/>
                     <connections>
                         <outlet property="calendarDatePicker" destination="2nz-7z-doL" id="fGc-6E-Iej"/>
+                        <outlet property="notificationMessage" destination="Nzh-GS-3Z7" id="hfm-eW-HZ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B95-Yl-Nz0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
